@@ -1,0 +1,40 @@
+@keyframes slideAnimation {
+  0% {
+    left: -500px;
+  }
+  70% {
+    left: 2px;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes imageAnimation {
+  0% {
+    bottom: -500px;
+  }
+  70% {
+    bottom: 2px;
+    transform: scale(0.9);
+  }
+  100% {
+    bottom: 0;
+  }
+}
+
+.imageAnimation {
+  animation: imageAnimation 1s ease-in-out 2s;
+  position: relative;
+}
+.headerTexAnimation {
+  animation: slideAnimation 1s ease-in-out 2s;
+
+  position: relative;
+}
+
+.subTextanimationn {
+  animation: slideAnimation 1.0009s ease-in-out 2s;
+
+  position: relative;
+}
