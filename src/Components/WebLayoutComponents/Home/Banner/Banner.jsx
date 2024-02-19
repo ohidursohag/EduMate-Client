@@ -25,7 +25,7 @@ const Banner = () => {
   }, []);
 
   return (
-    <div className="flex flex-col  items-center justify-center bg-[#212138]  text-white  md:flex-row p-8 lg:p-0 ">
+    <div className="flex flex-col  items-center justify-center bg-[#212138]  text-white  md:flex-row p-8 lg:p-0 overflow-hidden ">
       <div className="  md:w-4/12  space-y-1 md:space-y-4  ">
         <div className={animationCss.headerTexAnimation}>
           <h2 className="  text-2xl md:text-3xl lg:text-5xl space-y-5">
@@ -58,7 +58,9 @@ const Banner = () => {
         ></Image>
       </div>
 
-      <div className="flex    md:flex-col gap-7  md:gap-20 justify-center pt-12 md:pt-0   ">
+      <div
+        className={`flex    md:flex-col gap-7  md:gap-20 justify-center pt-12 md:pt-0  overflow-hidden ${animationCss.statAnimation}  `}
+      >
         <div>
           <h2 className=" text-xl md:text-3xl font-bold pb-2">
             {" "}
