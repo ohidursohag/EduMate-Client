@@ -14,15 +14,6 @@ module.exports = {
         description: "#4B5563",
       },
     },
-
-    colors: {
-      'primary': '#2C5F2D',
-      'secondary': '#97BC62',
-      'title': '#1F2937',
-      'description': '#4B5563',
-      'black': '#000',
-      'white': '#fff'
-    }
   },
   plugins: [],
 };
