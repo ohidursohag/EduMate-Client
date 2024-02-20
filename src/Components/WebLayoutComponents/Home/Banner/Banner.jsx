@@ -25,8 +25,9 @@ const Banner = () => {
   }, []);
 
   return (
-    <div className="flex flex-col  items-center justify-center bg-[#283618]  text-[rgb(254,250,224)]  md:flex-row p-8 lg:p-0 overflow-hidden ">
-      <div className=" w-full md:w-4/12  space-y-3 md:space-y-4  ">
+    <div className="flex flex-col  items-center justify-center bg-[#283618]  text-[rgb(254,250,224)]  md:flex-row p-8  overflow-hidden ">
+      <div className=" w-full md:w-4/12  space-y-3 md:space-y-4">
+        {/* Left side content here */}
         <div className={animationCss.headerTexAnimation}>
           <h2 className="  text-2xl md:text-3xl lg:text-5xl space-y-5">
             Make a Enroll
@@ -61,6 +62,8 @@ const Banner = () => {
           alt="banner image a person with laptop"
         ></Image>
       </div>
+
+      {/* right side content here */}
 
       <div
         className={`flex    md:flex-col gap-7  md:gap-20 justify-center pt-12 md:pt-0  overflow-hidden ${animationCss.statAnimation}  `}
