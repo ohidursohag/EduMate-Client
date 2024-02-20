@@ -5,9 +5,9 @@ import banner1 from "../../../../../public/BannerImage/banner-without-bg.png";
 const Footer = () => {
   return (
     <Section>
-      <div className="bg-[#000000]">
+      <div className="bg-[#000000] grid grid-cols-1 md:grid-cols-3 p-10">
         {/* contact information */}
-        <div>
+        <div className="text-white md:w-4/12">
           <h2>EduMate</h2>
           <p>
             We do not belive in quantity rather belive in quality . Lets do new
@@ -21,7 +21,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-2">
+        <div className="grid grid-cols-2 md:w-4/12">
           <div>
             <h2>Menu</h2>
             <ul className="text-white">
@@ -43,6 +43,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
+
           <div>
             <h2>Services</h2>
             <ul className="space-y-4 text-white">
@@ -65,12 +66,15 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <div>
-          <h2>Our Trainer</h2>
 
-          <Image src={banner1} alt="footer success images " />
-          <Image src={banner1} alt="footer success images " />
-          <Image src={banner1} alt="footer success images " />
+        <div className="w-4/12 text-white">
+          <h2>Our Trainer</h2>
+          <div className="grid grid-cols-2 ">
+            <Image src={banner1} alt="footer success images " />
+            <Image src={banner1} alt="footer success images " />
+            <Image src={banner1} alt="footer success images " />
+            <Image src={banner1} alt="footer success images " />
+          </div>
         </div>
       </div>
     </Section>
