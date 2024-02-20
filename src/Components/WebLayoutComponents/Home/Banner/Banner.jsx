@@ -25,7 +25,7 @@ const Banner = () => {
   }, []);
 
   return (
-    <div className="flex flex-col  items-center justify-center bg-[#283618]  text-[rgb(254,250,224)]  md:flex-row p-8  overflow-hidden ">
+    <div className="flex flex-col  items-center justify-center bg-[#283618]  text-[rgb(254,250,224)]  md:flex-row p-8 pb-0  overflow-hidden ">
       <div className=" w-full md:w-4/12  space-y-3 md:space-y-4">
         {/* Left side content here */}
         <div className={animationCss.headerTexAnimation}>
@@ -57,7 +57,7 @@ const Banner = () => {
         className={`md:w-4/12 overflow-hidden    ${animationCss.bounceImageAnimation}`}
       >
         <Image
-          className={`${animationCss.imageAnimation} `}
+          className={`${animationCss.imageAnimation}  `}
           src={banner1}
           alt="banner image a person with laptop"
         ></Image>
