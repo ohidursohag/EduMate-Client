@@ -25,10 +25,6 @@ const Banner = () => {
   }, []);
 
   return (
-<<<<<<< HEAD
-    <div>
-       <div> This is Banner ...</div>
-=======
     <div className="flex flex-col  items-center justify-center bg-[#283618]  text-[rgb(254,250,224)]  md:flex-row p-8 pb-0  overflow-hidden ">
       <div className=" w-full md:w-4/12  space-y-3 md:space-y-4">
         {/* Left side content here */}
@@ -94,7 +90,6 @@ const Banner = () => {
           </span>
         </div>
       </div>
->>>>>>> 5e1cec4cfac6f030222caa863850c97f184f4289
     </div>
   );
 };
