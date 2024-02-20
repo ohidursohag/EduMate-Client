@@ -23,6 +23,7 @@ const Banner = () => {
         }
       });
     }, 20);
+    return () => clearInterval(interval);
   }, []);
 
   return (
