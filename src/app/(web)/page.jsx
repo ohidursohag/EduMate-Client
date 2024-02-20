@@ -1,9 +1,10 @@
+import Blog from "@/Components/WebLayoutComponents/Home/Blog/Blog";
 
 const Homepage = () => {
 
   return (
     <div>
-       <div> This is Homepage </div>
+      <Blog />
     </div>
   )
 };
