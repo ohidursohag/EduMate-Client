@@ -1,9 +1,9 @@
 @keyframes slideAnimation {
   0% {
-    left: -500px;
+    left: -145%;
   }
   70% {
-    left: 2px;
+    left: 23%;
   }
   100% {
     left: 0;
@@ -42,11 +42,11 @@
 }
 
 .imageAnimation {
-  animation: imageAnimation 1s ease-in-out 0.6s;
+  animation: imageAnimation 1.3s ease-in-out 0.6s;
   position: relative;
 }
 .headerTexAnimation {
-  animation: slideAnimation 0.88s ease-in-out 0.6s;
+  animation: slideAnimation 1s ease-in-out 0.6s;
 
   position: relative;
 }
