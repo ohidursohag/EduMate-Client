@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
-import banner1 from "../../../../../public/BannerImage/banner-without-bg.png";
+import banner1 from "@/Assets/BannerImage/banner-without-bg.png";
 import Image from "next/image";
 import animationCss from "./animation.module.css";
 

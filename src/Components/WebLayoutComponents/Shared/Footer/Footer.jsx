@@ -1,7 +1,7 @@
 import Section from "@/Components/Utils/Section";
 import Image from "next/image";
 import Link from "next/link";
-import banner1 from "../../../../../public/BannerImage/banner-without-bg.png";
+import banner1 from "@/Assets/BannerImage/banner-without-bg.png";
 const Footer = () => {
   return (
     <Section>

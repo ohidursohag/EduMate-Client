@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import img1 from "../../../../../public/img8.jpg"
+import img1 from "@/Assets/img8.jpg"
 import { GoDotFill } from "react-icons/go";
 import { LuMoveRight } from "react-icons/lu";
 import ShareButton from './ShareButton';
