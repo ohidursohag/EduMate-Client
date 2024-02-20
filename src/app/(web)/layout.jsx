@@ -3,7 +3,7 @@ import Navbar from "@/Components/WebLayoutComponents/Shared/Navbar/Navbar";
 import PropTypes from "prop-types";
 const WebLayout = ({ children }) => {
   return (
-    <div className="max-w-7xl mx-auto">
+    <div className="">
       <Navbar />
       <div> {children}</div>
       <Footer />
