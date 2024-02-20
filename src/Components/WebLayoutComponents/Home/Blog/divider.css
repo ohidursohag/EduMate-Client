@@ -18,7 +18,7 @@
 	height: 7px;
 	width: 8px;
 	background-color: #fff;
-	animation: dot-move 3s linear infinite;
+	animation: dot-move 4s linear infinite;
 }
 
 @keyframes dot-move {

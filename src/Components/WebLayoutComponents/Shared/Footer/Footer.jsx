@@ -13,9 +13,9 @@ const Footer = () => {
   return (
     <footer className="bg-[black]">
       <Container>
-        <div className=" grid  md:gap-12  md:grid-cols-3 content-center p-4 md:p-16">
+        <div className=" grid  lg:gap-12  grid-cols-1 lg:grid-cols-3 content-center p-4 md:p-16">
           {/* contact information */}
-          <div className="text-white border-b-2 border-b-[#818181] md:border-b-0    md:border-r-2  md:border-r-[#818181] pb-10  ">
+          <div className=" flex flex-col items-center lg:flex-none text-white border-b-2 border-b-[#818181] lg:border-b-0  lg:border-r-2  lg:border-r-[#818181] pb-10  ">
             <h2 className=" text-4xl text-center md:text-start md:text-4xl mb-7">
               EduMate
             </h2>
@@ -50,7 +50,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="grid grid-cols-2  gap-10 place-items-center  border-b-2 md:border-b-0 border-b-[#818181]     md:border-r-2 md:place-content-start   md:border-r-[#818181] pb-10 ">
+          <div className="grid grid-cols-2  gap-10 place-items-center  border-b-2  border-b-[#818181] lg:border-b-0     lg:border-r-2 md:place-content-start   lg:border-r-[#818181] pb-10 ">
             <div className="">
               <h2 className="text-xl mb-4  text-white mt-4">Menu</h2>
               <ul className="space-y-5 text-[#818181]">
@@ -96,12 +96,12 @@ const Footer = () => {
           </div>
 
           <div className="">
-            <h2 className="text-white text-xl mt-4 text-center md:text-start">
+            <h2 className="text-white text-xl my-4 text-center lg:text-start">
               Our Trainer
             </h2>
 
             <div>
-              <div className="grid grid-cols-2 ">
+              <div className="grid grid-cols-2 place-items-center lg:content-normal ">
                 <Image
                   className="h-40 w-32"
                   src={banner1}
