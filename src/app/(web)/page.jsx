@@ -1,11 +1,15 @@
+import Container from "@/Components/Utils/Container";
+import Banner from "@/Components/WebLayoutComponents/Home/Banner/Banner";
+
+import Blog from "@/Components/WebLayoutComponents/Home/Blog/Blog";
 
 const Homepage = () => {
-
   return (
     <div>
-       <div> This is Homepage </div>
+      <Banner></Banner>
+      <Blog />
     </div>
-  )
+  );
 };
 
 export default Homepage;

@@ -3,7 +3,7 @@ const BlogPage = () => {
 
   return (
     <div>
-       <div> This is BlogPage </div>
+       <div> This is BlogPage Setup </div>
     </div>
   )
 };
