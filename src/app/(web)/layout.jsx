@@ -4,11 +4,11 @@ import Navbar from "@/Components/WebLayoutComponents/Shared/Navbar/Navbar";
 import PropTypes from "prop-types";
 const WebLayout = ({ children }) => {
   return (
-    <Container>
+    <div className="">
       <Navbar />
       <div> {children}</div>
       <Footer />
-    </Container>
+    </div>
   );
 };
 
