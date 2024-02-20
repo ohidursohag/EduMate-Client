@@ -44,10 +44,10 @@ const Banner = () => {
           Our course are led by industry experts and <br /> experienced
           instruction who are passionate <br /> about technology and commited to
           helpoing <br /> you succeed
+          <button className=" max-w-60 block  mt-5 px-4 py-3 text-white bg-[#e03314] rounded-md ">
+            Explore Course
+          </button>
         </p>
-        <button className="max-w-60 px-4 py-3 text-white bg-[#e03314] rounded-md ">
-          Explore Course
-        </button>
       </div>
 
       <div className=" md:w-4/12 overflow-hidden">
