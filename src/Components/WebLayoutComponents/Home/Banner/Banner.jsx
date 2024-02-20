@@ -28,7 +28,7 @@ const Banner = () => {
   return (
     <section className="bg-[#283618]">
       <Container>
-        <div className="flex flex-col  items-center justify-center   text-[rgb(254,250,224)]  md:flex-row p-8 md:pb-0  overflow-hidden ">
+        <div className="flex flex-col  items-center  gap-24  text-[rgb(254,250,224)]  md:flex-row p-8  md:pb-0  overflow-hidden ">
           <div className=" w-full md:w-4/12  space-y-3 md:space-y-4">
             {/* Left side content here */}
             <div className={animationCss.headerTexAnimation}>
