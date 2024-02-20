@@ -25,18 +25,20 @@ const Banner = () => {
   }, []);
 
   return (
-    <div className="flex flex-col  items-center justify-center bg-[#212138]  text-white  md:flex-row p-8 lg:p-0 overflow-hidden ">
-      <div className="  md:w-4/12  space-y-4 md:space-y-4  ">
+    <div className="flex flex-col  items-center justify-center bg-[#283618]  text-[rgb(254,250,224)]  md:flex-row p-8 lg:p-0 overflow-hidden ">
+      <div className=" w-full md:w-4/12  space-y-3 md:space-y-4  ">
         <div className={animationCss.headerTexAnimation}>
           <h2 className="  text-2xl md:text-3xl lg:text-5xl space-y-5">
             Make a Enroll
           </h2>
+
           <p className="text-2xl md:text-3xl lg:text-5xl">
             <span className="font-bold">Enhance</span> Your
           </p>
+
           <span className="inline-block  text-2xl md:text-3xl lg:text-5xl ">
             <span className="font-bold">Career</span> With <br /> Edumate
-          </span>{" "}
+          </span>
         </div>
         <p
           className={`pb-5  text-sm md:text-md ${animationCss.subTextanimationn} `}
@@ -44,15 +46,17 @@ const Banner = () => {
           Our course are led by industry experts and <br /> experienced
           instruction who are passionate <br /> about technology and commited to
           helpoing <br /> you succeed
-          <button className=" max-w-60 block  mt-5 px-4 py-3 text-white bg-[#e03314] rounded-md ">
+          <button className=" max-w-60 block  mt-5 px-4 py-3 font-bold text-white bg-[#e67e22] rounded-md ">
             Explore Course
           </button>
         </p>
       </div>
 
-      <div className=" md:w-4/12 overflow-hidden">
+      <div
+        className={`md:w-4/12 overflow-hidden    ${animationCss.bounceImageAnimation}`}
+      >
         <Image
-          className={`${animationCss.imageAnimation}`}
+          className={`${animationCss.imageAnimation} `}
           src={banner1}
           alt="banner image a person with laptop"
         ></Image>
