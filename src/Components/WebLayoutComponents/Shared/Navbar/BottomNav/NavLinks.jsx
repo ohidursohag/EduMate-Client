@@ -7,7 +7,7 @@ const NavLinks = () => {
   const pathName = usePathname();
   return (
     <div className="">
-      <div className="text-gray-50  font-medium hidden lg:flex gap-5">
+      <div className="text-gray-500  font-medium hidden lg:flex gap-5">
         <Link
           href={"/"}
           className={`group inline-block duration-300 ${
@@ -86,7 +86,7 @@ const NavLinks = () => {
         </Link>
       </div>
       <div className="flex w-full text-gray-100 gap-1 items-center hover:text-secondary duration-500 lg:hidden">
-        <IoMenu size={25}/> <span>Menu</span>
+        <IoMenu size={25} /> <span>Menu</span>
       </div>
     </div>
   );
