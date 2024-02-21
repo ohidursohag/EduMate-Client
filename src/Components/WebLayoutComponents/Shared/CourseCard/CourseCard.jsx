@@ -3,11 +3,11 @@ import Image from "next/image";
 
 const CourseCard = () => {
   return (
-    <div className="shadow-lg hover:-translate-y-1 duration-500">
+    <div className="shadow-lg hover:shadow-gray-400 hover:-translate-y-1 duration-500 rounded-lg">
       <div className=" flex gap-0 flex-col lg:flex-row rounded-t-lg lg:rounded-l-lg">
-        <div className="h-[200px] w-[700px] rounded-t-lg lg:rounded-l-lg">
+        <div className="h-[200px] w-[385px] md:w-[372px] lg:w-[700px] rounded-t-lg lg:rounded-l-lg">
           <Image
-            width={700}
+            width={400}
             height={200}
             className="h-full w-full rounded-t-lg lg:rounded-l-lg "
             src="https://i.ibb.co/Y0r4m9G/isometric-neural-network-programmer-composition-with-isolated-icons-gear-brain-human-characters-comp.jpg"

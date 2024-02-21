@@ -11,6 +11,7 @@ const FreeCourses = () => {
                 <CourseCard></CourseCard>
                 <CourseCard></CourseCard>
                 <CourseCard></CourseCard>
+               
             </div>
         </div>
     );
