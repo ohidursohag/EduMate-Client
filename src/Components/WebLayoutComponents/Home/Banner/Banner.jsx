@@ -37,24 +37,24 @@ const Banner = () => {
     <section className="bg-[#283618] pb-12">
       <Container>
         <div className=" flex flex-col gap-8 ">
-          <div className="flex flex-col  items-center  gap-10  text-[rgb(254,250,224)]  md:flex-row p-8  md:pb-0  overflow-hidden ">
+          <div className="flex flex-col justify-between items-center gap-10  text-[rgb(254,250,224)] md:flex-row p-8 md:pl-0 pr-3 md:pb-0 overflow-hidden ">
             {/*================== Left side content here======================= */}
             <div className=" w-full md:w-4/12  space-y-3 md:space-y-4">
               <div className={animationCss.headerTexAnimation}>
-                <h2 className="  text-2xl md:text-3xl lg:text-5xl space-y-5">
+                <h2 className="text-2xl md:text-4xl lg:text-5xl space-y-5">
                   Make a Enroll
                 </h2>
 
-                <p className="text-2xl md:text-3xl lg:text-5xl">
+                <p className="text-2xl md:text-4xl lg:text-5xl">
                   <span className="font-bold">Enhance</span> Your
                 </p>
 
-                <span className="inline-block  text-2xl md:text-3xl lg:text-5xl ">
+                <span className="inline-block  text-2xl md:text-4xl lg:text-5xl ">
                   <span className="font-bold">Career</span> With <br /> Edumate
                 </span>
               </div>
               <p
-                className={`pb-5  text-sm md:text-md ${animationCss.subTextanimationn} `}
+                className={`pb-5  text-sm md:text-md ${animationCss.subTextanimationn}`}
               >
                 Our course are led by industry experts and <br /> experienced
                 instruction who are passionate <br /> about technology and
@@ -66,7 +66,7 @@ const Banner = () => {
             </div>
 
             <div
-              className={`md:w-4/12 overflow-hidden    ${animationCss.bounceImageAnimation}`}
+              className={` hidden overflow-hidden lg:block md:w-4/12  ${animationCss.bounceImageAnimation}`}
             >
               <Image
                 className={`${animationCss.imageAnimation}  `}
@@ -77,46 +77,47 @@ const Banner = () => {
 
             {/* r===================BANNER CARD==================== */}
 
-            <div className="md:w-4/12  ">
-              <Swiper
-                effect={"cards"}
-                grabCursor={true}
-                modules={[EffectCards]}
-                className="mySwiper"
-              >
-                <SwiperSlide>
-                  <BannerCard />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <BannerCard />
-                </SwiperSlide>
-                <SwiperSlide>Slide 3</SwiperSlide>
-              </Swiper>
+            <div className="z-30  md:w-4/12">
+              <div className="md:-translate-x-24  lg:translate-x-0 ">
+                <Swiper
+                  effect={"cards"}
+                  grabCursor={true}
+                  modules={[EffectCards]}
+                  className="mySwiper w-96"
+                >
+                  <SwiperSlide>
+                    <BannerCard />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <BannerCard />
+                  </SwiperSlide>
+                </Swiper>
+              </div>
             </div>
           </div>
           {/* =======================counter========================= */}
 
           <div
-            className={`flex    md:flex-row gap-7  md:gap-20 justify-around pt-12 md:pt-0  overflow-hidden ${animationCss.statAnimation}  `}
+            className={`flex gap-7 justify-center pt-12  md:pt-0 md:flex-row md:gap-20  md:justify-around  overflow-hidden ${animationCss.statAnimation}`}
           >
             <div className=" text-white">
               <h2 className=" text-xl md:text-3xl font-bold pb-2">
                 {" "}
                 {coursecount} k
               </h2>
-              <span className="text-white   border-b-slate-700  md:border-b-2 pb-4">
+              <span className="text-whiteborder-b-slate-700  md:border-b-2 pb-4">
                 Student joined
               </span>
             </div>
             <div className=" text-white">
               <h2 className=" text-xl md:text-3xl font-bold pb-2"> 30+</h2>
-              <span className="text-white   border-b-slate-700  md:border-b-2 pb-4">
+              <span className="text-white border-b-slate-700  md:border-b-2 pb-4">
                 Online Courses
               </span>
             </div>
             <div className=" text-white">
               <h2 className=" text-xl md:text-3xl font-bold pb-2"> 22+</h2>
-              <span className="text-white   border-b-slate-700  md:border-b-2 pb-4">
+              <span className="text-white border-b-slate-700  md:border-b-2 pb-4">
                 Experienced Mentors
               </span>
             </div>
