@@ -14,7 +14,7 @@ const Footer = () => {
     <footer className="bg-[black]">
       <Container>
         <div className=" grid  lg:gap-12  grid-cols-1 lg:grid-cols-3 content-center p-4 md:p-16">
-          {/* contact information */}
+          {/*====================== contact information====================== */}
           <div className=" flex flex-col items-center lg:flex-none text-white border-b-2 border-b-[#818181] lg:border-b-0  lg:border-r-2  lg:border-r-[#818181] pb-10  ">
             <h2 className=" text-4xl text-center md:text-start md:text-4xl mb-7">
               EduMate
@@ -51,6 +51,7 @@ const Footer = () => {
           </div>
 
           <div className="grid grid-cols-2  gap-10 place-items-center  border-b-2  border-b-[#818181] lg:border-b-0     lg:border-r-2 md:place-content-start   lg:border-r-[#818181] pb-10 ">
+            {/* ================menue content============= */}
             <div className="">
               <h2 className="text-xl mb-4  text-white mt-4">Menu</h2>
               <ul className="space-y-5 text-[#818181]">
@@ -72,6 +73,7 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
+            {/* ==============service content===================== */}
             <div>
               <h2 className="text-xl mb-4  text-white mt-4">Services</h2>
               <ul className="space-y-5 text-[#818181] ">
@@ -94,7 +96,7 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-
+          {/*  ===========================our trainer section================= */}
           <div className="">
             <h2 className="text-white text-xl my-4 text-center lg:text-start">
               Our Trainer

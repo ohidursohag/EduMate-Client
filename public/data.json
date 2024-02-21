@@ -1,0 +1,293 @@
+{
+  "categories": [
+    {
+      "name": "Programming",
+      "courses": [
+        {
+          "title": "Python for Beginners",
+          "img": "https://media.istockphoto.com/id/1189210101/photo/python-programming-language-concept-woman-developer-with-her-hand-holding-modern-sign-with.webp?b=1&s=170667a&w=0&k=20&c=2olSCm8U7KNUS6RuCFZcgrPvWy_H_QMgyLbAZWnFJ28=",
+          "description": "Learn Python programming language from scratch. This course covers basic syntax, data structures, and control flow.",
+          "pricing": "Free",
+          "instructor": {
+            "name": "John Smith",
+            "img": "john_smith.jpg"
+          },
+          "starting_date": "2024-03-01",
+          "rating": 4.5,
+          "duration": "6 weeks",
+          "time_per_week": 5,
+          "discount": null
+        },
+        {
+          "title": "Advanced Java Programming",
+          "img": "https://img.freepik.com/free-vector/laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon_39422-971.jpg?size=626&ext=jpg&ga=GA1.1.957612158.1688363626&semt=ais",
+          "description": "Take your Java skills to the next level. This course delves into advanced topics such as multithreading, networking, and GUI programming.",
+          "pricing": "Paid",
+          "amount": 99.99,
+          "instructor": {
+            "name": "Emily Johnson",
+            "img": "emily_johnson.jpg"
+          },
+          "starting_date": "2024-04-15",
+          "rating": 4.7,
+          "duration": "8 weeks",
+          "time_per_week": 7,
+          "discount": 20
+        }
+      ]
+    },
+    {
+      "name": "Data Science",
+      "courses": [
+        {
+          "title": "Introduction to Data Analysis",
+          "img": "https://img.freepik.com/free-vector/web-seo-isometric-composition-with-content-analysis-symbols-illustration_1284-28699.jpg?size=626&ext=jpg&ga=GA1.1.957612158.1688363626&semt=ais",
+          "description": "Learn the basics of data analysis using Python. This course covers data cleaning, visualization, and basic statistical analysis.",
+          "pricing": "Free",
+          "instructor": {
+            "name": "Jessica Brown",
+            "img": "jessica_brown.jpg"
+          },
+          "starting_date": "2024-03-10",
+          "rating": 4.3,
+          "duration": "4 weeks",
+          "time_per_week": 6,
+          "discount": null
+        },
+        {
+          "title": "Machine Learning Fundamentals",
+          "img": "https://img.freepik.com/free-photo/humanoid-robot-working-with-machine-factory-ai-generative_123827-23863.jpg?size=626&ext=jpg&ga=GA1.1.957612158.1688363626&semt=ais",
+          "description": "Get started with machine learning. This course covers popular algorithms, model evaluation, and practical applications.",
+          "pricing": "Paid",
+          "amount": 149.99,
+          "instructor": {
+            "name": "Michael Anderson",
+            "img": "michael_anderson.jpg"
+          },
+          "starting_date": "2024-04-01",
+          "rating": 4.8,
+          "duration": "10 weeks",
+          "time_per_week": 8,
+          "discount": null
+        }
+      ]
+    },
+    {
+      "name": "Graphic Design",
+      "courses": [
+        {
+          "title": "Adobe Photoshop Mastery",
+          "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9hjZMl-jOPQTMlH5MqHDYVVizNnyx1x-Bbg&usqp=CAU",
+          "description": "Master the art of digital image manipulation with Adobe Photoshop. This course covers tools, techniques, and creative projects.",
+          "pricing": "Paid",
+          "amount": 79.99,
+          "instructor": {
+            "name": "Sophia Lee",
+            "img": "sophia_lee.jpg"
+          },
+          "starting_date": "2024-03-20",
+          "rating": 4.6,
+          "duration": "6 weeks",
+          "time_per_week": 4,
+          "discount": 15
+        },
+        {
+          "title": "Typography Fundamentals",
+          "img": "https://static.skillshare.com/uploads/parentClasses/0ac06f345f4b6698a28d97274bcfcca6/8770bbcc",
+          "description": "Explore the principles of typography in graphic design. This course covers type anatomy, hierarchy, and layout design.",
+          "pricing": "Free",
+          "instructor": {
+            "name": "David Miller",
+            "img": "david_miller.jpg"
+          },
+          "starting_date": "2024-04-05",
+          "rating": 4.2,
+          "duration": "4 weeks",
+          "time_per_week": 3,
+          "discount": null
+        }
+      ]
+    },
+    {
+      "name": "Language Learning",
+      "courses": [
+        {
+          "title": "Spanish for Beginners",
+          "img": "https://img.freepik.com/premium-photo/learn-spanish-foreign-language-human-brain-spain-flag-color-website-banner-letters-articles-word-preposition-vocabulary-grammar-3d-rendering-studying-online-course-education-listening-reading-fluency_897771-1462.jpg?size=626&ext=jpg&ga=GA1.1.957612158.1688363626&semt=ais",
+          "description": "Start learning Spanish from scratch. This course covers basic vocabulary, grammar, and conversational skills.",
+          "pricing": "Free",
+          "instructor": {
+            "name": "Carlos Rodriguez",
+            "img": "carlos_rodriguez.jpg"
+          },
+          "starting_date": "2024-03-15",
+          "rating": 4.4,
+          "duration": "8 weeks",
+          "time_per_week": 6,
+          "discount": null
+        },
+        {
+          "title": "Advanced French Conversation",
+          "img": "https://img.freepik.com/premium-photo/chalkboard-3d-style-with-pixar-concept-there-is-3-building-drawing-chalkboard-eiffel_973275-116676.jpg?size=626&ext=jpg&ga=GA1.1.957612158.1688363626&semt=ais_ai_generated",
+          "description": "Enhance your French speaking skills through advanced conversation practice. This course focuses on fluency and cultural nuances.",
+          "pricing": "Paid",
+          "amount": 69.99,
+          "instructor": {
+            "name": "Sophie Martin",
+            "img": "sophie_martin.jpg"
+          },
+          "starting_date": "2024-04-10",
+          "rating": 4.5,
+          "duration": "6 weeks",
+          "time_per_week": 5,
+          "discount": null
+        }
+      ]
+    },
+    {
+      "name": "Web Development",
+      "courses": [
+        {
+          "title": "HTML & CSS Basics",
+          "img": "https://img.freepik.com/free-photo/html-system-websites-concept_23-2150323500.jpg?size=626&ext=jpg&ga=GA1.1.957612158.1688363626&semt=ais",
+          "description": "Learn the fundamentals of web development with HTML and CSS. This course covers building static web pages and basic styling.",
+          "pricing": "Free",
+          "instructor": {
+            "name": "Anna Wilson",
+            "img": "anna_wilson.jpg"
+          },
+          "starting_date": "2024-03-25",
+          "rating": 4.0,
+          "duration": "5 weeks",
+          "time_per_week": 4,
+          "discount": null
+        },
+        {
+          "title": "JavaScript Fundamentals",
+          "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzyN7pxjqQLi80ThKi-hyr1WRmnqKcnFZR1w&usqp=CAU",
+          "description": "Master the basics of JavaScript programming. This course covers variables, functions, loops, and DOM manipulation.",
+          "pricing": "Paid",
+          "amount": 49.99,
+          "instructor": {
+            "name": "Daniel Clark",
+            "img": "daniel_clark.jpg"
+          },
+          "starting_date": "2024-04-20",
+          "rating": 4.3,
+          "duration": "6 weeks",
+          "time_per_week": 5,
+          "discount": 10
+        }
+      ]
+    },
+    {
+      "name": "Photography",
+      "courses": [
+        {
+          "title": "Introduction to DSLR Photography",
+          "img": "https://img.freepik.com/premium-photo/world-photography-day-minimal-objects-concept-photo-shoot_950002-12798.jpg?size=626&ext=jpg&ga=GA1.1.957612158.1688363626&semt=ais_ai_generated",
+          "description": "Learn the basics of digital photography with a DSLR camera. This course covers camera settings, composition, and exposure.",
+          "pricing": "Paid",
+          "amount": 59.99,
+          "instructor": {
+            "name": "Olivia Davis",
+            "img": "olivia_davis.jpg"
+          },
+          "starting_date": "2024-03-30",
+          "rating": 4.7,
+          "duration": "4 weeks",
+          "time_per_week": 3,
+          "discount": null
+        },
+        {
+          "title": "Advanced Photo Editing with Lightroom",
+          "img": "https://img.freepik.com/free-photo/adult-woman-exuding-elegance-studio-portrait-generative-ai_188544-12091.jpg?size=626&ext=jpg&ga=GA1.1.957612158.1688363626&semt=ais",
+          "description": "Take your photo editing skills to the next level with Adobe Lightroom. This course covers advanced editing techniques and workflow optimization.",
+          "pricing": "Paid",
+          "amount": 69.99,
+          "instructor": {
+            "name": "Ethan Taylor",
+            "img": "ethan_taylor.jpg"
+          },
+          "starting_date": "2024-04-08",
+          "rating": 4.6,
+          "duration": "6 weeks",
+          "time_per_week": 4,
+          "discount": null
+        }
+      ]
+    },
+    {
+      "name": "Business & Entrepreneurship",
+      "courses": [
+        {
+          "title": "Introduction to Marketing",
+          "img": "https://img.freepik.com/premium-photo/marketing-banner-hang-arrow-hit-bull-eye_698953-12690.jpg?size=626&ext=jpg&ga=GA1.1.957612158.1688363626&semt=ais",
+          "description": "Gain an understanding of marketing fundamentals. This course covers market research, segmentation, and marketing strategies.",
+          "pricing": "Free",
+          "instructor": {
+            "name": "Mark Thompson",
+            "img": "mark_thompson.jpg"
+          },
+          "starting_date": "2024-03-12",
+          "rating": 4.1,
+          "duration": "6 weeks",
+          "time_per_week": 5,
+          "discount": null
+        },
+        {
+          "title": "Entrepreneurship Essentials",
+          "img": "https://img.freepik.com/premium-photo/electric-light-bulb-head-blackboard-with-diagram-with-decisions-question-marks-make-decisions-ge_906405-1382.jpg?size=626&ext=jpg&ga=GA1.1.957612158.1688363626&semt=ais_ai_generated",
+          "description": "Learn the essentials of starting and running a successful business. This course covers idea generation, business planning, and financing.",
+          "pricing": "Paid",
+          "amount": 129.99,
+          "instructor": {
+            "name": "Rachel Adams",
+            "img": "rachel_adams.jpg"
+          },
+          "starting_date": "2024-04-05",
+          "rating": 4.4,
+          "duration": "8 weeks",
+          "time_per_week": 6,
+          "discount": null
+        }
+      ]
+    },
+    {
+      "name": "Health & Fitness",
+      "courses": [
+        {
+          "title": "Yoga Fundamentals",
+          "img": "https://img.freepik.com/free-photo/person-practicing-yoga-meditation-nature-sunset-sunrise_23-2150838491.jpg?size=626&ext=jpg&ga=GA1.1.957612158.1688363626&semt=ais_ai_generated",
+          "description": "Discover the fundamentals of yoga practice. This course covers basic poses, breathing techniques, and relaxation methods.",
+          "pricing": "Free",
+          "instructor": {
+            "name": "Sophie Turner",
+            "img": "sophie_turner.jpg"
+          },
+          "starting_date": "2024-03-18",
+          "rating": 4.2,
+          "duration": "6 weeks",
+          "time_per_week": 3,
+          "discount": null
+        },
+        {
+          "title": "High-Intensity Interval Training (HIIT)",
+          "img": "https://img.freepik.com/premium-photo/effort_1003030-12213.jpg?size=626&ext=jpg&ga=GA1.1.957612158.1688363626&semt=ais_ai_generated",
+          "description": "Get your heart pumping with high-intensity interval training. This course offers effective workouts for improved fitness and stamina.",
+          "pricing": "Paid",
+          "amount": 39.99,
+          "instructor": {
+            "name": "David White",
+            "img": "david_white.jpg"
+          },
+          "starting_date": "2024-04-10",
+          "rating": 4.5,
+          "duration": "4 weeks",
+          "time_per_week": 4,
+          "discount": null
+        }
+      ]
+    }
+  ]
+}

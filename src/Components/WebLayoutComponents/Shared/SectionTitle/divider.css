@@ -17,6 +17,7 @@
 	top: -1.1px;
 	height: 7px;
 	width: 8px;
+	border-radius: 30px;
 	background-color: #fff;
 	animation: dot-move 3s linear infinite;
 }
