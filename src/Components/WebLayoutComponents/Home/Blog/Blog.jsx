@@ -97,15 +97,13 @@ const Blog = () => {
                      <div className='flex justify-between items-center pt-[6%]'>
                         <button className='flex items-center gap-2 shadow-md py-1 px-3 hover:bg-primary rounded-md hover:text-white hover:duration-500 group-[share]: max-w-max'>Read More <span><LuMoveRight className='hover:duration-500 w-3 share-hover:w-full' /></span></button>
                         <ShareButton />
-                     </div>
                   </div>
                </div>
             </div>
-            {/* See More Button */}
-            <div className='flex justify-center my-12'>
-               <button className='text-2xl font-semibold flex items-center gap-2 shadow py-1 px-3 bg-primary rounded-md hover:bg-white hover:text-primary hover:shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)] text-white hover:duration-300'>See More <span><LuMoveRight /></span></button>
-            </div>
-         </Section>
+         </div>
+         <div className='flex justify-center my-12'>
+            <button className='text-2xl font-semibold flex items-center gap-2 shadow py-1 px-3 bg-primary rounded-md hover:bg-white hover:text-primary hover:shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)] text-white'>See More <span><LuMoveRight /></span></button>
+         </div>
       </div>
    );
 };

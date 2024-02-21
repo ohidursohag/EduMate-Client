@@ -6,7 +6,7 @@ import { IoMdClose } from "react-icons/io";
 import Link from "next/link";
 
 const ShareButton = () => {
-  const [shareOpen, setShareOpen] = useState(false)
+  const [shareOpen, setShareOpen] = useState(false);
   return (
     <div className={`flex justify-center items-center gap-2 ${shareOpen ? "bg-primary rounded-2xl pr-2" : ""}`}>
       {/* Social Link */}
@@ -22,9 +22,15 @@ const ShareButton = () => {
         shareOpen ? <button onClick={() => setShareOpen(!shareOpen)}><IoMdClose className={`p-[2px] bg-[#fff] rounded-full text-2xl hover:rotate-45 ${shareOpen ? "bg-white" : ""}`} /></button> : <button onClick={() => setShareOpen(!shareOpen)} className='hover:shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px] rounded-full hover:bg-primary hover:duration-300'>
           <LiaShareAltSolid className='p-1 hover:text-white  shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] rounded-full text-4xl' />
         </button>
-      }
+      ) : (
+        <button
+          onClick={() => setShareOpen(!shareOpen)}
+          className="hover:shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px] rounded-full hover:bg-primary ">
+          <LiaShareAltSolid className="p-1 hover:text-white shadow-md rounded-full text-4xl" />
+        </button>
+      )}
     </div>
   );
-}
+};
 
 export default ShareButton;
