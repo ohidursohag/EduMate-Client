@@ -77,7 +77,9 @@ const Banner = () => {
 
             {/* r===================BANNER CARD==================== */}
 
-            <div className="z-30  md:w-4/12">
+            <div
+              className={`z-30  md:w-4/12 ${animationCss.bounceImageAnimation} `}
+            >
               <div className="md:-translate-x-24  lg:translate-x-0 ">
                 <Swiper
                   effect={"cards"}
