@@ -1,4 +1,5 @@
 "use client";
+import useOutsideClikToClose from "@/Components/Hooks/useOutsideClikToClose";
 import { useState } from "react";
 import { FaChevronDown } from "react-icons/fa";
 
@@ -29,7 +30,7 @@ const countries = [
         <path fill="#bd3d44" d="M0 0h640v480H0" />
         <path
           stroke="#fff"
-          stroke-width="37"
+          strokeWidth="37"
           d="M0 55.3h640M0 129h640M0 203h640M0 277h640M0 351h640M0 425h640"
         />
         <path fill="#192f5d" d="M0 0h364.8v258.5H0" />
@@ -38,7 +39,7 @@ const countries = [
         </marker>
         <path
           fill="none"
-          marker-mid="url(#us-a)"
+          markerMid="url(#us-a)"
           d="m0 0 16 11h61 61 61 61 60L47 37h61 61 60 61L16 63h61 61 61 61 60L47 89h61 61 60 61L16 115h61 61 61 61 60L47 141h61 61 60 61L16 166h61 61 61 61 60L47 192h61 61 60 61L16 218h61 61 61 61 60z"
         />
       </svg>
@@ -49,6 +50,7 @@ const countries = [
 const Language = () => {
   const [currentLang, setCurrentLang] = useState("english");
   const [isShow, setIsShow] = useState(false);
+  const refWraper = useOutsideClikToClose(setIsShow)
   const handleLanguageSetting = (country) => {
     if (country.name === "BD") {
       setCurrentLang("bangla");
@@ -59,7 +61,7 @@ const Language = () => {
   };
   return (
     <div className="relative group">
-      <div onClick={() => setIsShow(!isShow)} className="cursor-pointer">
+      <div ref={refWraper} onClick={() => setIsShow(!isShow)} className="cursor-pointer">
         {currentLang === "english" ? (
           <div className="flex items-center gap-1">
             <div className="w-5">
@@ -70,7 +72,7 @@ const Language = () => {
                 <path fill="#bd3d44" d="M0 0h640v480H0" />
                 <path
                   stroke="#fff"
-                  stroke-width="37"
+                  strokeWidth="37"
                   d="M0 55.3h640M0 129h640M0 203h640M0 277h640M0 351h640M0 425h640"
                 />
                 <path fill="#192f5d" d="M0 0h364.8v258.5H0" />
@@ -79,7 +81,7 @@ const Language = () => {
                 </marker>
                 <path
                   fill="none"
-                  marker-mid="url(#us-a)"
+                  markerMid="url(#us-a)"
                   d="m0 0 16 11h61 61 61 61 60L47 37h61 61 60 61L16 63h61 61 61 61 60L47 89h61 61 60 61L16 115h61 61 61 61 60L47 141h61 61 60 61L16 166h61 61 61 61 60L47 192h61 61 60 61L16 218h61 61 61 61 60z"
                 />
               </svg>
@@ -104,7 +106,7 @@ const Language = () => {
         )}
       </div>
       <div>
-      <div className={`shadow rounded-b py-2 absolute bg-white z-20 mt-1 duration-300 ${isShow ?'scale-y-100 translate-y-0':'scale-y-0 -translate-y-10'} `}>
+      <div  className={`shadow rounded-b py-2 absolute bg-white z-20 mt-1 duration-300 ${isShow ?'scale-y-100 translate-y-0':'scale-y-0 -translate-y-10'} `}>
           {countries.map((country, idx) => (
             <div
               key={idx}

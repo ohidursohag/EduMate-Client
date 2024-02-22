@@ -9,7 +9,7 @@ import Link from "next/link";
 const SocialIcons = () => {
 
   return (
-   <div className="text-gray-500  flex flex-col md:flex-row absolute left-5 bottom-6 md:static items-center gap-3 ">
+   <div className="text-gray-500  flex  items-center gap-3 ">
    <Link href="#">
      <FaFacebookF
        size={18}
