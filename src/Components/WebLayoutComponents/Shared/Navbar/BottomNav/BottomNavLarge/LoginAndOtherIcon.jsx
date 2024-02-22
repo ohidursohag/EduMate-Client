@@ -12,16 +12,18 @@ const LoginAndOtherIcon = ({ isSearchShow, setIsSearchShow }) => {
       <div className="flex items-center gap-3 text-gray-500 ">
         <button
           onClick={() => setIsSearchShow(!isSearchShow)}
-          className={`hover:text-secondary duration-300 ${
+          className={`duration-300 ${
             isSearchShow
-            ? "text-red-500 scale-110 hover:text-red-500"
-            : "text-gray-500 scale-100 hover:text-secondary"
+              ? "text-red-500 scale-110 hover:text-red-500"
+              : "text-gray-500 scale-100 hover:text-secondary"
           }`}>
           {isSearchShow ? <LuSearchX size={25} /> : <IoSearch size={25} />}
         </button>
         <button className="hover:text-secondary hover:scale-110 duration-300 relative">
           <LuShoppingCart size={25} />
-          <span className="w-4 h-4 absolute -top-2 right-0 rounded-full flex justify-center items-center  bg-primary text-white text-xs">0</span>
+          <span className="w-4 h-4 absolute -top-2 right-0 rounded-full flex justify-center items-center  bg-primary text-white text-xs">
+            0
+          </span>
         </button>
       </div>
       <div className="w-[2px]  bg-gray-400" />

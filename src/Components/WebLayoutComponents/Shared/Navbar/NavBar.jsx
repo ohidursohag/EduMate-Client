@@ -4,9 +4,9 @@ import { useEffect, useState } from "react";
 import "./Shared/stickyNav.css";
 import TopNav from "./TopNav/TopNav";
 import Container from "@/Components/Utils/Container";
-import BottomNav from "./BottomNav/BottomNav";
 import SearchDropDown from "./DropDownAndMegaMenus/SearchDropDown/SearchDropDown";
 import useOutsideClikToClose from "@/Components/Hooks/useOutsideClikToClose";
+import BottomNav from "./BottomNav/BottomNav";
 const NavBar = () => {
   const [scroll, setScroll] = useState(false);
   const [isSearchShow, setIsSearchShow] = useState(false);
@@ -35,7 +35,7 @@ const NavBar = () => {
         </Container>
       </nav>
       <div
-      // ref={refWraper}
+
       >
         <SearchDropDown
           scroll={scroll}
