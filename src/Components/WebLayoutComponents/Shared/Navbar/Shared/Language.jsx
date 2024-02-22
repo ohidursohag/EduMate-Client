@@ -106,7 +106,7 @@ const Language = () => {
         )}
       </div>
       <div>
-      <div  className={`shadow rounded-b py-2 absolute bg-white z-20 mt-1 duration-300 ${isShow ?'scale-y-100 translate-y-0':'scale-y-0 -translate-y-10'} `}>
+      <div  className={`shadow rounded-b py-2 absolute z-50 bg-white mt-1 duration-300 ${isShow ?'scale-y-100 translate-y-0':'scale-y-0 -translate-y-10'} `}>
           {countries.map((country, idx) => (
             <div
               key={idx}
