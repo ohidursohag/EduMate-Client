@@ -6,7 +6,6 @@ import { IoMenu } from "react-icons/io5";
 const NavLinks = () => {
   const pathName = usePathname();
   return (
-    <div className="">
       <div className="text-gray-500  font-medium hidden lg:flex gap-5">
         <Link
           href={"/"}
@@ -85,10 +84,6 @@ const NavLinks = () => {
           />
         </Link>
       </div>
-      <div className="flex w-full text-gray-100 gap-1 items-center hover:text-secondary duration-500 lg:hidden">
-        <IoMenu size={25} /> <span>Menu</span>
-      </div>
-    </div>
   );
 };
 
