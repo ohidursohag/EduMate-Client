@@ -1,10 +1,10 @@
 import Footer from "@/Components/WebLayoutComponents/Shared/Footer/Footer";
-import Navbar from "@/Components/WebLayoutComponents/Shared/Navbar/Navbar";
 import PropTypes from "prop-types";
+import NavBar from "@/Components/WebLayoutComponents/Shared/Navbar/NavBar";
 const WebLayout = ({ children }) => {
   return (
     <div className="">
-      <Navbar />
+      <NavBar/>
       <div> {children}</div>
       <Footer />
     </div>

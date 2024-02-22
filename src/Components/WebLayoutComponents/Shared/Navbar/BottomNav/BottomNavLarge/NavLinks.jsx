@@ -6,11 +6,10 @@ import { IoMenu } from "react-icons/io5";
 const NavLinks = () => {
   const pathName = usePathname();
   return (
-    <div className="">
-      <div className="text-gray-50  font-medium hidden lg:flex gap-5">
+      <div className="text-gray-500  font-medium flex gap-5 h-16">
         <Link
           href={"/"}
-          className={`group inline-block duration-300 ${
+          className={`my-auto group inline-block duration-300  ${
             pathName === "/" ? "text-secondary" : "hover:text-secondary "
           }`}>
           <span>Home</span>
@@ -22,7 +21,7 @@ const NavLinks = () => {
         </Link>
         <Link
           href={"/courses"}
-          className={`group inline-block duration-300 ${
+          className={`my-auto group inline-block duration-300 ${
             pathName === "/courses" ? "text-secondary" : "hover:text-secondary "
           }`}>
           <span>Courses</span>
@@ -34,7 +33,7 @@ const NavLinks = () => {
         </Link>
         <Link
           href={"/blog"}
-          className={`group inline-block duration-300 ${
+          className={`my-auto group inline-block duration-300 ${
             pathName === "/blog" ? "text-secondary" : "hover:text-secondary "
           }`}>
           <span>Blog</span>
@@ -46,7 +45,7 @@ const NavLinks = () => {
         </Link>
         <Link
           href={"/about-us"}
-          className={`group inline-block duration-300 ${
+          className={`my-auto group inline-block duration-300 ${
             pathName === "/about-us"
               ? "text-secondary"
               : "hover:text-secondary "
@@ -60,7 +59,7 @@ const NavLinks = () => {
         </Link>
         <Link
           href={"/contact-us"}
-          className={`group inline-block duration-300 ${
+          className={`my-auto group inline-block duration-300 ${
             pathName === "/contact-us"
               ? "text-secondary"
               : "hover:text-secondary "
@@ -74,7 +73,7 @@ const NavLinks = () => {
         </Link>
         <Link
           href={"/career"}
-          className={`group inline-block duration-300 ${
+          className={`my-auto group inline-block duration-300 ${
             pathName === "/career" ? "text-secondary" : "hover:text-secondary "
           }`}>
           <span>Career</span>
@@ -85,10 +84,6 @@ const NavLinks = () => {
           />
         </Link>
       </div>
-      <div className="flex w-full text-gray-100 gap-1 items-center hover:text-secondary duration-500 lg:hidden">
-        <IoMenu size={25}/> <span>Menu</span>
-      </div>
-    </div>
   );
 };
 

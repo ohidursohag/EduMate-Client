@@ -1,16 +1,25 @@
-import Logo from "./Logo";
-import NavLinks from "./NavLinks";
-import SearchBar from "./SearchBar";
+import { useState } from "react";
+import BottomNavLarge from "./BottomNavLarge/BottomNavLarge";
+import NavBottomSmall from "./BottomNavSmall/NavBottomSmall";
+import SideNavBar from "../SideNavBar/SideNavBar";
 
-const BottomNav = () => {
-
+const BottomNav = ({ isSearchShow, setIsSearchShow }) => {
+  const [openSidebar, setOpenSidebar] = useState(false);
   return (
-    <div className="py-3 flex flex-col gap-5 md:flex-row justify-between items-center">
-      <Logo/>
-      <NavLinks/>
-      <SearchBar/>
-    </div>
-  )
+    <>
+      <BottomNavLarge
+        isSearchShow={isSearchShow}
+        setIsSearchShow={setIsSearchShow}
+      />
+      <NavBottomSmall
+        isSearchShow={isSearchShow}
+        setIsSearchShow={setIsSearchShow}
+        openSidebar={openSidebar}
+        setOpenSidebar={setOpenSidebar}
+      />
+      <SideNavBar openSidebar={openSidebar} setOpenSidebar={setOpenSidebar} />
+    </>
+  );
 };
 
 export default BottomNav;

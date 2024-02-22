@@ -1,4 +1,4 @@
-import SideBar from "@/Components/DashBoardLayoutComponents/Shared/SideBar/SideBar";
+import SideBar from "@/components/DashBoardLayoutComponents/Shared/SideBar/SideBar";
 
 const DashBoardLayout = ({ children }) => {
   return (
