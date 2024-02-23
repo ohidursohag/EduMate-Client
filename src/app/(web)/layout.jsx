@@ -1,12 +1,10 @@
 import Footer from "@/Components/WebLayoutComponents/Shared/Footer/Footer";
-import NavBarSmallDevice from "@/Components/WebLayoutComponents/Shared/Navbar/NavbarSmallDevice/NavBarSmallDevice";
-import NavbarLeargeDevice from "@/Components/WebLayoutComponents/Shared/Navbar/NavbarLeargeDevice/NavbarLeargeDevice";
 import PropTypes from "prop-types";
+import NavBar from "@/Components/WebLayoutComponents/Shared/Navbar/NavBar";
 const WebLayout = ({ children }) => {
   return (
     <div className="">
-      <NavbarLeargeDevice />
-      <NavBarSmallDevice />
+      <NavBar/>
       <div> {children}</div>
       <Footer />
     </div>

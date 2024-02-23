@@ -73,6 +73,7 @@ const Language = () => {
                 <path
                   stroke="#fff"
                   strokeWidth="37"
+                  
                   d="M0 55.3h640M0 129h640M0 203h640M0 277h640M0 351h640M0 425h640"
                 />
                 <path fill="#192f5d" d="M0 0h364.8v258.5H0" />
@@ -82,6 +83,7 @@ const Language = () => {
                 <path
                   fill="none"
                   markerMid="url(#us-a)"
+                  
                   d="m0 0 16 11h61 61 61 61 60L47 37h61 61 60 61L16 63h61 61 61 61 60L47 89h61 61 60 61L16 115h61 61 61 61 60L47 141h61 61 60 61L16 166h61 61 61 61 60L47 192h61 61 60 61L16 218h61 61 61 61 60z"
                 />
               </svg>
@@ -106,7 +108,7 @@ const Language = () => {
         )}
       </div>
       <div>
-      <div  className={`shadow rounded-b py-2 absolute bg-white z-20 mt-1 duration-300 ${isShow ?'scale-y-100 translate-y-0':'scale-y-0 -translate-y-10'} `}>
+      <div  className={`shadow rounded-b py-2 absolute z-50 bg-white mt-1 duration-300 ${isShow ?'scale-y-100 translate-y-0':'scale-y-0 -translate-y-10'} `}>
           {countries.map((country, idx) => (
             <div
               key={idx}
