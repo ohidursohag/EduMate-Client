@@ -17,7 +17,7 @@ export const metadata = {
   title: "EduMate",
   description: "e-learning management Application",
   icons: {
-    icon: "./fav.ico",
+    icon: "./logoIcon.png",
   },
 };
 export default function RootLayout({ children }) {
