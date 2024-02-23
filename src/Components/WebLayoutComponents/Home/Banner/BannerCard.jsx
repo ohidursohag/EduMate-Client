@@ -1,7 +1,6 @@
 import React from "react";
 import card from "@/Assets/BannerImage/course.jpg";
 import webdevelopment from "@/Assets/BannerImage/webdevelopment.webp";
-import animationCss from "./animation.module.css";
 
 import Image from "next/image";
 import { FaRegStar } from "react-icons/fa";
@@ -9,9 +8,7 @@ import { MdKeyboardBackspace } from "react-icons/md";
 
 const BannerCard = () => {
   return (
-    <div
-      className={`w-[290px] md:w-4/5 h-[500px]  bg-[#fefae0]  rounded-xl p-5   ml-8 ml:8 md:ml-0 md:mr-8  md:pr-16 `}
-    >
+    <div className=" w-full bg-[#fefae0]  rounded-xl p-5    ">
       <figure>
         <Image className="rounded-md " src={webdevelopment} alt="course card" />
       </figure>
