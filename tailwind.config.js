@@ -13,6 +13,15 @@ module.exports = {
         title: "#1F2937",
         description: "#4B5563",
       },
+      fontFamily: {
+        Jost: ["var(--font-jost)"],
+        Popins: ["var(--font-popins)"],
+      },
+      screens: {
+        'xs': "475px",
+        "2xl": "1440px",
+        "3xl": "1620px",
+      },
     },
   },
   plugins: [
