@@ -3,14 +3,15 @@ import Banner from "@/Components/WebLayoutComponents/Home/Banner/Banner";
 
 import Blog from "@/Components/WebLayoutComponents/Home/Blog/Blog";
 import FreeCourses from "@/Components/WebLayoutComponents/Home/FreeCourses/FreeCourses";
-import CourseCard from "@/Components/WebLayoutComponents/Shared/CourseCard/CourseCard";
+import PopularCourses from "@/Components/WebLayoutComponents/Home/PopularCourses/PopularCourses";
+import CourseCard from "@/Components/WebLayoutComponents/Shared/Cards/CourseCard";
 
 const Homepage = () => {
   return (
     <div>
       <Banner></Banner>
+      <PopularCourses/>
       <Blog />
-      {/* <FreeCourses></FreeCourses> */}
     </div>
   );
 };

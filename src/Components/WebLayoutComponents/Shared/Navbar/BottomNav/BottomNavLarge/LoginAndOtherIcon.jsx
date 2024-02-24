@@ -5,6 +5,7 @@ import { IoSearch } from "react-icons/io5";
 import Link from "next/link";
 import Image from "next/image";
 import useOutsideClikToClose from "@/Components/Hooks/useOutsideClikToClose";
+import ProfileDropdown from "../../DropDownAndMegaMenus/ProfileDropdown/ProfileDropdown";
 const LoginAndOtherIcon = ({ isSearchShow, setIsSearchShow }) => {
   const user = true;
   return (
@@ -29,7 +30,8 @@ const LoginAndOtherIcon = ({ isSearchShow, setIsSearchShow }) => {
       <div className="w-[2px]  bg-gray-400" />
       <div className="group">
         {user ? (
-          <figure className=" cursor-pointer rounded-full w-10 h-10 mx-auto overflow-hidden ring-2 bg-gray-100 ring-primary/50 hover:ring-secondary duration-300">
+         <div className="relative">
+           <figure className="cursor-pointer rounded-full w-10 h-10 mx-auto overflow-hidden ring-2 bg-gray-100 ring-primary/50 hover:ring-secondary duration-300">
             <Image
               className="object-cover w-10 h-10 object-bottom duration-300 group-hover:scale-110"
               width={40}
@@ -38,6 +40,10 @@ const LoginAndOtherIcon = ({ isSearchShow, setIsSearchShow }) => {
               alt="Profile image"
             />
           </figure>
+          <div className="relative">
+            <ProfileDropdown/>
+          </div>
+         </div>
         ) : (
           <Link
             href={""}

@@ -18,7 +18,7 @@ module.exports = {
         Popins: ["var(--font-popins)"],
       },
       screens: {
-        'xs': "475px",
+        'xs': "425px",
         "2xl": "1440px",
         "3xl": "1620px",
       },

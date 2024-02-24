@@ -24,7 +24,14 @@ const Banner = () => {
                 alt="redial gradient"
                 width={800}
                 height={800}
-                className="absolute -inset-16 -z-10"
+                className={`absolute -inset-16 -z-10  opacity-70`}
+              />
+              <Image
+                src={RedialGeadiet}
+                alt="redial gradient"
+                width={800}
+                height={800}
+                className="absolute -inset-16 -z-10  animate-[ping_2s_linear_infinite]"
               />
               <Image
                 src={bannerCharecter}
