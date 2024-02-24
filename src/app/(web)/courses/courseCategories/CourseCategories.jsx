@@ -1,7 +1,11 @@
 import React from "react";
 import LatestCourseDemo from "../latestCourseDemo/LatestCourseDemo";
 
-const CourseCategories = ({ smallDevice }) => {
+const CourseCategories = ({
+  handleChangeCategories,
+  smallDevice,
+  categoryFilter,
+}) => {
   return (
     <>
       <div
@@ -23,6 +27,7 @@ const CourseCategories = ({ smallDevice }) => {
             <div className="space-y-3">
               <label className="flex gap-3 items-center">
                 <input
+                  onChange={() => handleChangeCategories("development")}
                   type="checkbox"
                   class="appearance-none  rounded-[2px]  outline-none  checked:bg-blue-500 "
                 />
@@ -31,6 +36,7 @@ const CourseCategories = ({ smallDevice }) => {
 
               <label className="flex gap-3 items-center">
                 <input
+                  onChange={() => handleChangeCategories("programming")}
                   type="checkbox"
                   class="appearance-none  rounded-[2px] checked:bg-blue-500 ..."
                 />
@@ -39,6 +45,7 @@ const CourseCategories = ({ smallDevice }) => {
 
               <label className="flex gap-3 items-center">
                 <input
+                  onChange={() => handleChangeCategories("dataScience")}
                   type="checkbox"
                   class="appearance-none  rounded-[2px] checked:bg-blue-500 ..."
                 />{" "}
@@ -56,6 +63,7 @@ const CourseCategories = ({ smallDevice }) => {
               <label className="flex gap-3 items-center">
                 <input
                   type="checkbox"
+                  onChange={() => handleChangeCategories("videoGraphy")}
                   class="appearance-none  rounded-[2px] checked:bg-blue-500 ..."
                 />{" "}
                 photography
