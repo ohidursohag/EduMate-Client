@@ -2,6 +2,8 @@ import useAxiosPublic from "@/Components/Hooks/useAxiosPublic";
 import Container from "@/Components/Utils/Container";
 import CourseCard from "@/Components/WebLayoutComponents/Shared/CourseCard/CourseCard";
 import { ImMenu } from "react-icons/im";
+import CourseCategories from "./courseCategories/CourseCategories";
+import LatestCourseDemo from "./latestCourseDemo/LatestCourseDemo";
 const CoursesPage = async () => {
   const axiosPublic = useAxiosPublic();
 
@@ -9,7 +11,9 @@ const CoursesPage = async () => {
     caches: "no-store",
   });
 
-  console.log(getCourseData.data);
+  const latestFreeCourses = getCourseData?.data
+    ?.flatMap((category) => category?.courses)
+    .filter((course) => course?.pricing == "Free");
 
   return (
     <Container>
@@ -31,128 +35,30 @@ const CoursesPage = async () => {
                 <option>3</option>
               </select>
             </div>
-            <CourseCard></CourseCard>
+
+            <div className="grid gap-3 md:grid-cols-2 lg:grid-cols-3    ">
+              {getCourseData?.data?.map((course, index) =>
+                course?.courses.map((course) => {
+                  return (
+                    <CourseCard courseData={course} key={index}></CourseCard>
+                  );
+                })
+              )}
+            </div>
           </div>
 
           {/* ==============categories section===================== */}
-          <div className="  bg-[#FFFFFF4 col-span-3 space-y-6  border-[#eee] border-2 p-4 ">
-            <div className="">
-              <h2 className="text-2xl relative font-medium mb-6">
-                Categories
-                <span className="inline-block w-3/12 h-[3px] bg-[#ffb606] absolute -bottom-2 left-0"></span>
-              </h2>
 
-              <div className="space-y-3">
-                <label className="flex gap-3 items-center">
-                  <input
-                    type="checkbox"
-                    class="appearance-none  rounded-[2px]  outline-none  checked:bg-blue-500 "
-                  />
-                  Development
-                </label>
-
-                <label className="flex gap-3 items-center">
-                  <input
-                    type="checkbox"
-                    class="appearance-none  rounded-[2px] checked:bg-blue-500 ..."
-                  />
-                  Programming
-                </label>
-
-                <label className="flex gap-3 items-center">
-                  <input
-                    type="checkbox"
-                    class="appearance-none  rounded-[2px] checked:bg-blue-500 ..."
-                  />{" "}
-                  Data science
-                </label>
-
-                <label className="flex gap-3 items-center">
-                  <input
-                    type="checkbox"
-                    class="appearance-none  rounded-[2px] checked:bg-blue-500 ..."
-                  />{" "}
-                  Digital Marketing
-                </label>
-
-                <label className="flex gap-3 items-center">
-                  <input
-                    type="checkbox"
-                    class="appearance-none  rounded-[2px] checked:bg-blue-500 ..."
-                  />{" "}
-                  photography
-                </label>
-                <label className="flex gap-3 items-center">
-                  <input
-                    type="checkbox"
-                    class="appearance-none  rounded-[2px] checked:bg-blue-500 ..."
-                  />{" "}
-                  Algorithom
-                </label>
-                <label className="flex gap-3 items-center">
-                  <input
-                    type="checkbox"
-                    class="appearance-none  rounded-[2px] checked:bg-blue-500 ..."
-                  />{" "}
-                  Machine Learning
-                </label>
-              </div>
-            </div>
-
-            <div className="">
-              <h2 className="text-2xl relative font-medium mb-6">
-                Author
-                <span className="inline-block w-3/12 h-[3px] bg-[#ffb606] absolute -bottom-2 left-0"></span>
-              </h2>
-
-              <div className="space-y-3">
-                <label className="flex gap-3 items-center">
-                  <input
-                    type="checkbox"
-                    class="appearance-none  rounded-[2px] checked:bg-blue-500 ..."
-                  />{" "}
-                  David Leon
-                </label>
-                <label className="flex gap-3 items-center">
-                  <input
-                    type="checkbox"
-                    class="appearance-none  rounded-[2px] checked:bg-blue-500 ..."
-                  />{" "}
-                  Chung li bin
-                </label>
-                <label className="flex gap-3 items-center">
-                  <input
-                    type="checkbox"
-                    class="appearance-none  rounded-[2px] checked:bg-blue-500 ..."
-                  />{" "}
-                  Bongodev
-                </label>
-              </div>
-            </div>
-
-            <div className="">
-              <h2 className="text-2xl relative font-medium mb-4">
-                Price
-                <span className="inline-block w-3/12 h-[3px] bg-[#ffb606] absolute -bottom-2 left-0"></span>
-              </h2>
-
-              <div className="space-y-3">
-                <label className="flex gap-3 items-center">
-                  <input
-                    type="checkbox"
-                    class="appearance-none  rounded-[2px] checked:bg-blue-500 ..."
-                  />{" "}
-                  Free
-                </label>
-
-                <label className="flex gap-3 items-center">
-                  <input
-                    type="checkbox"
-                    class="appearance-none  rounded-[2px] checked:bg-blue-500 ..."
-                  />{" "}
-                  Paid
-                </label>
-              </div>
+          <div className="col-span-3 space-y-6 p-4">
+            <CourseCategories />
+            <h2 className="text-2xl relative font-medium mb-6 ">Latest </h2>
+            <div className=" flex flex-col gap-4">
+              {latestFreeCourses.slice(2, 5).map((freeCourse, index) => (
+                <LatestCourseDemo
+                  freeCourse={freeCourse}
+                  key={index}
+                ></LatestCourseDemo>
+              ))}
             </div>
           </div>
         </div>
