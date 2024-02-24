@@ -1,16 +1,16 @@
 import PropTypes from "prop-types";
 import useOutsideClikToClose from "@/Components/Hooks/useOutsideClikToClose";
 import SidebarNavLinks from "./SidebarNavLinks";
-import Logo from "../../NavbarLeargeDevice/BottomNav/Logo";
 import { MdOutlineEmail } from "react-icons/md";
 import { IoCallOutline } from "react-icons/io5";
 import { IoMdClose } from "react-icons/io";
-import SocialIcons from "../../Shared/SocialIcons";
+import Logo from "../BottomNav/BottomNavLarge/Logo";
+import SocialIcons from "../Shared/SocialIcons";
 const SideNavBar = ({ openSidebar, setOpenSidebar }) => {
   const refWraper = useOutsideClikToClose(setOpenSidebar);
   return (
     <div
-      className={`fixed bg-black/10  w-full h-full inset-0 left-0 z-50 duration-500  ${
+      className={`fixed bg-black/10  w-full h-full inset-0 left-0 z-50 duration-500 lg:hidden ${
         openSidebar
           ? "translate-x-0 rounded-none backdrop-blur-[4px]"
           : "-translate-x-[100%] rounded-r-[300px] backdrop-blur-[2px]"
