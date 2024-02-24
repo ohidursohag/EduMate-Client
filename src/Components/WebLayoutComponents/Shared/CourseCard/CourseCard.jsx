@@ -7,7 +7,7 @@ const CourseCard = ({ courseData }) => {
   return (
     <div>
       <div className="mb-3">
-        <div className="group relative h-[400px]  rounded-lg hover:-translate-y-2 duration-500 hover:shadow-gray-600 hover:shadow-lg">
+        <div className="group relative h-[400px]   rounded-lg hover:-translate-y-2 duration-500 hover:shadow-gray-600 hover:shadow-lg">
           <Image
             width={300}
             height={400}

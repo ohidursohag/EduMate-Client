@@ -51,8 +51,8 @@ const CoursesPage = () => {
       <div className="relative">
         <div className="my-4 text-3xl font-bold"> Courses </div>
 
-        <div className="grid grid-cols-12 bg-[#00000000]">
-          <div className=" col-span-9 px-2">
+        <div className="grid grid-cols-12 bg-[#00000000] w-full">
+          <div className="col-span-12 md:col-span-8 lg:col-span-9  px-2">
             <CourseFilter
               categoryFilter={categoryFilter}
               setcategoryFilter={setcategoryFilter}
@@ -73,7 +73,7 @@ const CoursesPage = () => {
 
           {/* ============== right sidecategories section===================== */}
 
-          <div className=" hidden md:block col-span-3 space-y-6 p-4">
+          <div className=" hidden md:block md:col-span-4 lg:col-span-3 space-y-6 p-4">
             <CourseCategories />
             <h2 className="text-2xl relative font-medium mb-6 ">Latest </h2>
             <div className=" flex flex-col gap-4">
@@ -83,7 +83,9 @@ const CoursesPage = () => {
             </div>
           </div>
 
-          <div className="block md:hidden ">
+          {/* slidebar for small device */}
+
+          <div className={`${categoryFilter ? "block" : "hidden"} md:hidden `}>
             <CourseCategories
               smallDevice={true}
               categoryFilter={categoryFilter}
