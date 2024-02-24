@@ -17,7 +17,9 @@ const CourseCard = () => {
           <h2 className="font-semibold">Machine Learning and AI</h2>
           <p className="text-xs font-light">John Doe</p>
           <p>$80</p>
-          <button className='bg-primary text-white p-1 w-1/3 rounded-md'>Enroll Now <span></span></button>
+          <button className="bg-primary text-white p-1 w-1/3 rounded-md">
+            Enroll Now <span></span>
+          </button>
         </div>
       </div>
     </div>
