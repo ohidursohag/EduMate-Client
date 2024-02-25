@@ -1,6 +1,6 @@
 [
   {
-    "name": "Programming",
+    "category": "Programming",
     "courses": [
       {
         "title": "Python for Beginners",
@@ -92,7 +92,7 @@
     ]
   },
   {
-    "name": "Data Science",
+    "category": "Data Science",
     "courses": [
       {
         "title": "Introduction to Data Analysis",
@@ -184,7 +184,7 @@
     ]
   },
   {
-    "name": "Graphic Design",
+    "category": "Graphic Design",
     "courses": [
       {
         "title": "Adobe Photoshop Mastery",
@@ -276,7 +276,7 @@
     ]
   },
   {
-    "name": "Language Learning",
+    "category": "Language Learning",
     "courses": [
       {
         "title": "Spanish for Beginners",
@@ -368,7 +368,7 @@
     ]
   },
   {
-    "name": "Web Development",
+    "category": "Web Development",
     "courses": [
       {
         "title": "HTML & CSS Basics",
@@ -460,7 +460,7 @@
     ]
   },
   {
-    "name": "Photography & Videography",
+    "category": "Photography & Videography",
     "courses": [
       {
         "title": "Introduction to DSLR Photography",
@@ -553,7 +553,7 @@
     ]
   },
   {
-    "name": "Business & Entrepreneurship",
+    "category": "Business & Entrepreneurship",
     "courses": [
       {
         "title": "Introduction to Marketing",
@@ -645,7 +645,7 @@
     ]
   },
   {
-    "name": "Health & Fitness",
+    "category": "Health & Fitness",
     "courses": [
       {
         "title": "Yoga Basics",

@@ -8,12 +8,13 @@ import { BiLike } from "react-icons/bi";
 import Image from "next/image";
 import img1 from "@/Assets/BlogImage/img1.jpg";
 import { FaRegCommentDots } from "react-icons/fa6";
+import DetailsButton from "./DetailsButton";
 const BlogCard = () => {
   const title = "Sales Training: Practical Techniques";
   const description =
     "Enhance your sales prowess with practical techniques focused on communication, negotiation, and customer relations. This course offers actionable insights for achieving greater success in sales.";
   return (
-    <div className="min-w-[200px] max-w-[400px  shadow-[0px_0px_5px_1px_rgba(17,17,26,.3)] hover:shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)] rounded-md duration-500 group">
+    <div className="  shadow-[0px_0px_5px_1px_rgba(17,17,26,.3)] hover:shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)] rounded-md duration-500 group">
       {/* Image  */}
       <div className="relative rounded-t-md overflow-hidden">
         <Image
@@ -57,12 +58,7 @@ const BlogCard = () => {
           </div>
         </div>
         <div className="relative flex justify-between items-center pt-[6%] overflow-hid rounded-[10px]">
-          <button className="flex items-center gap-2 mb-1 py-1 px-3 hover:bg-primary rounded-md hover:text-white duration-300 group/share max-w-max shadow-[0px_0px_5px_0px_rgba(44,95,45,.2)] hover:duration-300 ml-1">
-            Read More{" "}
-            <span>
-              <LuMoveRight className="duration-500 w-3 group-hover/share:w-full group-hover/share:text-white" />
-            </span>
-          </button>
+          <DetailsButton name={'Read More'} linkPath={''}/>
           <ShareButton />
         </div>
       </div>

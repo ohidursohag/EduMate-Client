@@ -8,8 +8,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#2C5F2D",
-        secondary: "#00eda4",
+        primary: "#250D87",
+        secondary: "#8466fe",
         title: "#1F2937",
         description: "#4B5563",
       },
@@ -18,7 +18,7 @@ module.exports = {
         Popins: ["var(--font-popins)"],
       },
       screens: {
-        'xs': "425px",
+        xs: "425px",
         "2xl": "1440px",
         "3xl": "1620px",
       },

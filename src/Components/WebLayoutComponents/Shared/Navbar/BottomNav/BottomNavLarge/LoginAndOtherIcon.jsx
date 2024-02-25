@@ -4,13 +4,13 @@ import { LuShoppingCart } from "react-icons/lu";
 import { IoSearch } from "react-icons/io5";
 import Link from "next/link";
 import Image from "next/image";
-import useOutsideClikToClose from "@/Components/Hooks/useOutsideClikToClose";
 import ProfileDropdown from "../../DropDownAndMegaMenus/ProfileDropdown/ProfileDropdown";
+import { CgProfile } from "react-icons/cg";
 const LoginAndOtherIcon = ({ isSearchShow, setIsSearchShow }) => {
   const user = true;
   return (
-    <div className="flex   gap-5">
-      <div className="flex items-center gap-3 text-gray-500 ">
+    <div className="flex h-16  ">
+      <div className="flex items-center gap-3 text-gray-500 mr-5">
         <button
           onClick={() => setIsSearchShow(!isSearchShow)}
           className={`duration-300 ${
@@ -27,27 +27,21 @@ const LoginAndOtherIcon = ({ isSearchShow, setIsSearchShow }) => {
           </span>
         </button>
       </div>
-      <div className="w-[2px]  bg-gray-400" />
-      <div className="group">
+      <div className={`w-[2px] h-10 my-auto bg-gray-400 ${user?'block':'hidden'}`} />
+      <div className="group flex items-center justify-center group/profileDropDown cursor-pointer">
         {user ? (
-         <div className="relative">
-           <figure className="cursor-pointer rounded-full w-10 h-10 mx-auto overflow-hidden ring-2 bg-gray-100 ring-primary/50 hover:ring-secondary duration-300">
-            <Image
-              className="object-cover w-10 h-10 object-bottom duration-300 group-hover:scale-110"
-              width={40}
-              height={40}
-              src={"https://i.ibb.co/7yY9hv0/26159-removebg-preview.png"}
-              alt="Profile image"
-            />
-          </figure>
-          <div className="relative">
+         <div className="relative   ">
+          <button className="hover:text-secondary w-full duration-300 px-3 text-gray-500">
+            <CgProfile size={30} />
+          </button>
+          
             <ProfileDropdown/>
-          </div>
+          
          </div>
         ) : (
           <Link
             href={""}
-            className="xl:text-xl mx-auto md:mx-0 w-max px-5 py-2 bg-primary text-white relative overflow-hidden group z-10 rounded-lg shadow-md flex items-center gap-2">
+            className="xl:text-xl  mx-auto md:mx-0 w-max px-5 py-2 bg-primary text-white relative overflow-hidden group z-10 rounded-lg shadow-md flex items-center gap-2 duration-500 hover:shadow-[0px_0px_10px_2px_rgba(44,95,45,.8)]">
             <span className="absolute -z-[1] bg-gray-300 rotate-12 -inset-12 group-hover:duration-500 duration-700 scale-x-0 group-hover:scale-x-100 origin-left transform transition-transform"></span>
             <span className="absolute -z-[1] bg-secondary  rotate-12 -inset-12 group-hover:duration-500 duration-500 scale-x-0 group-hover:scale-x-100 origin-left transform transition-transform"></span>
             <span className="absolute -z-[1] bg-primary rotate-12 -inset-12 group-hover:duration-500 duration-300 scale-x-0 group-hover:scale-x-50 origin-left transform transition-transform"></span>

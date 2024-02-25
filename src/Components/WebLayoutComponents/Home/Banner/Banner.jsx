@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import bannerCharecter from "@/Assets/BannerImage/bannerCharecter.webp";
 import RedialGeadiet from "@/Assets/BannerImage/RedialGeadiet.svg";
 import Image from "next/image";
@@ -43,11 +43,13 @@ const Banner = () => {
             </figure>
           </div>
           {/* Right */}
-          <CardSlider />
-        </div> 
+          <div className="w-full md:w-auto md:flex-1 overflow-hidden xl:overflow-">
+            <CardSlider />
+          </div>
+        </div>
       </Container>
       <Container className="absolute inset-x-0 bottom-0 z-20 hidden xl:block">
-        <Status/>
+        <Status />
       </Container>
       <figure className="absolute bottom-0 hidden xl:block">
         <Image src={waveSahapeUp} height={150} width={1920} alt="Shape" />
