@@ -11,7 +11,7 @@ const CourseCategories = ({
       <div
         className={`${
           smallDevice
-            ? "absolute -right-1 translate-y-0 transform transition-transform duration-1000 pr-0 top-24 "
+            ? "absolute -right-1 translate-y-0 transform transition-transform duration-1000 pr-0 top-10 "
             : " "
         }`}
       >
@@ -27,15 +27,21 @@ const CourseCategories = ({
             <div className="space-y-3">
               <label className="flex gap-3 items-center">
                 <input
+                  style={{
+                    boxShadow: "none",
+                  }}
                   onChange={() => handleChangeCategories("development")}
                   type="checkbox"
-                  class="appearance-none  rounded-[2px]  outline-none  checked:bg-blue-500 "
+                  class="appearance-none    rounded-[2px]  outline-none  checked:bg-blue-500 "
                 />
                 Development
               </label>
 
               <label className="flex gap-3 items-center">
                 <input
+                  style={{
+                    boxShadow: "none",
+                  }}
                   onChange={() => handleChangeCategories("programming")}
                   type="checkbox"
                   class="appearance-none  rounded-[2px] checked:bg-blue-500 ..."
@@ -45,6 +51,9 @@ const CourseCategories = ({
 
               <label className="flex gap-3 items-center">
                 <input
+                  style={{
+                    boxShadow: "none",
+                  }}
                   onChange={() => handleChangeCategories("dataScience")}
                   type="checkbox"
                   class="appearance-none  rounded-[2px] checked:bg-blue-500 ..."
@@ -54,6 +63,10 @@ const CourseCategories = ({
 
               <label className="flex gap-3 items-center">
                 <input
+                  style={{
+                    boxShadow: "none",
+                  }}
+                  onChange={() => handleChangeCategories("digitalMarketing")}
                   type="checkbox"
                   class="appearance-none  rounded-[2px] checked:bg-blue-500 ..."
                 />{" "}
@@ -62,6 +75,9 @@ const CourseCategories = ({
 
               <label className="flex gap-3 items-center">
                 <input
+                  style={{
+                    boxShadow: "none",
+                  }}
                   type="checkbox"
                   onChange={() => handleChangeCategories("videoGraphy")}
                   class="appearance-none  rounded-[2px] checked:bg-blue-500 ..."
@@ -70,6 +86,9 @@ const CourseCategories = ({
               </label>
               <label className="flex gap-3 items-center">
                 <input
+                  style={{
+                    boxShadow: "none",
+                  }}
                   type="checkbox"
                   class="appearance-none  rounded-[2px] checked:bg-blue-500 ..."
                 />{" "}
@@ -77,6 +96,9 @@ const CourseCategories = ({
               </label>
               <label className="flex gap-3 items-center">
                 <input
+                  style={{
+                    boxShadow: "none",
+                  }}
                   type="checkbox"
                   class="appearance-none  rounded-[2px] checked:bg-blue-500 ..."
                 />{" "}

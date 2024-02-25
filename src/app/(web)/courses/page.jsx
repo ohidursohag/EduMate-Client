@@ -15,7 +15,12 @@ const CoursesPage = () => {
     programming: false,
     dataScience: false,
     videoGraphy: false,
+    graphicsDesign: false,
+    digitalMarketing: false,
+    graphicsDesign: false,
   });
+
+  // ====================categories  handlechanger================
 
   const handleChangeCategories = (category) => {
     setCategoriesSelected((prevCategories) => ({
@@ -26,10 +31,12 @@ const CoursesPage = () => {
 
   const axiosPublic = useAxiosPublic();
 
+  // ============fetching categories data============
+
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axiosPublic.get("/courseData");
+        const response = await axiosPublic.get("/categories");
         setCourseData(response.data);
       } catch (error) {
         console.log(error);
@@ -38,9 +45,8 @@ const CoursesPage = () => {
     fetchData();
   }, [axiosPublic]);
 
+  // =============state checkign is all category selected or not then filter based on categories==================
   const filterCourse = getCourseData.flatMap((category) => {
-    console.log(category?.keyWardName);
-    console.log(Object.values(categoriesSelected).every((value) => !value));
     if (Object.values(categoriesSelected).every((value) => !value)) {
       return category.courses;
     } else {
@@ -88,13 +94,13 @@ const CoursesPage = () => {
               ))}
 
               {/* 
-{filterCourse?.map((course, index) =>
-                course?.courses.map((course) => {
-                  return (
-                    <CourseCard courseData={course} key={index}></CourseCard>
-                  );
-                })
-              )} */}
+            {filterCourse?.map((course, index) =>
+                            course?.courses.map((course) => {
+                              return (
+                                <CourseCard courseData={course} key={index}></CourseCard>
+                              );
+                            })
+                          )} */}
             </div>
           </div>
 

@@ -78,7 +78,7 @@ const Blog = () => {
               </div>
               <div className="flex justify-between items-center pt-[6%]">
                 <button className="flex items-center gap-2 shadow-md py-1 px-3 hover:bg-primary rounded-md hover:text-white hover:duration-500 group-[share]: max-w-max">
-                  Read More{" "}
+                  Read More
                   <span>
                     <LuMoveRight className="hover:duration-500 w-3 share-hover:w-full" />
                   </span>

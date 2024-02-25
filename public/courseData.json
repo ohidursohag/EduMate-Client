@@ -1,5 +1,5 @@
 {
-  "courseData": [
+  "categories": [
     {
       "name": "Programming",
       "keyWardName": "programming",
@@ -188,6 +188,7 @@
     },
     {
       "name": "Graphic Design",
+      "keyWardName": "graphicsDesign",
       "courses": [
         {
           "title": "Adobe Photoshop Mastery",
@@ -371,7 +372,7 @@
       ]
     },
     {
-      "name": "development",
+      "name": "Web Development",
       "keyWardName": "development",
       "courses": [
         {
@@ -559,7 +560,6 @@
     },
     {
       "name": "Business & Entrepreneurship",
-      "keyWardName": "Business",
       "courses": [
         {
           "title": "Introduction to Marketing",
@@ -652,7 +652,6 @@
     },
     {
       "name": "Health & Fitness",
-      "keyWardName": "health",
       "courses": [
         {
           "title": "Yoga Basics",

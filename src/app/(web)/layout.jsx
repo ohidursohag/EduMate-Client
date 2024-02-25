@@ -5,7 +5,7 @@ import NavBar from "@/Components/WebLayoutComponents/Shared/Navbar/NavBar";
 const WebLayout = ({ children }) => {
   return (
     <div className="">
-      <NavBar/>
+      <NavBar />
       <div> {children}</div>
       <Footer />
     </div>
