@@ -14,16 +14,16 @@ const BannerCard = () => {
       </figure>
 
       {/* ===========card body=============== */}
-      <div className="text-black space-y-3 ">
-        <p className="flex gap-4 items-center text-[#6b7385] pt-5">
+      <div className="text-black space-y-2 ">
+        <p className="flex gap-4 items-center text-description pt-5 text-sm">
           <span> 60 module </span>
           <span> 800 + video </span>
         </p>
 
-        <h2 className="text-[#192335] lg:text-2xl font-bold">
+        <h2 className="text-title text-lg xs:text-xl lg:text-2xl font-bold">
           Difficult Things About Education
         </h2>
-        <p className="text-[#6b7385] text-justify">
+        <p className="text-description text-sm text-justify line-clamp-2 sm">
           Master python by bulidin 100 projects in 100 day . learn data science
           auttomation ,build website
         </p>

@@ -26,9 +26,9 @@ const BlogDetails = ({ params }) => {
                            <Image src={img1} alt="Blog Image" height="fill" width="fill" className="rounded-t transition duration-500 w-full max-h-[540px]" />
                         </div>
                         <div className="p-5 flex flex-col justify-between bg-white">
-                           <div className="flex items-center gap-5">
+                           <div className="flex flex-col md:flex-row items-start gap-2 md:gap-5">
                               <div className="flex items-center gap-3">
-                                 <Image src={img1} alt="Blog Image" height="fill" width="fill" className="w-12 h-12 rounded-full" />
+                                 <Image src={img1} alt="Blog Image" height="fill" width="fill" className="w-7 h-7 rounded-full" />
                                  <p>Sohan Perves</p>
                               </div>
                               <p className="flex justify-center items-center gap-2"><span><FaRegCalendarDays className="text-xl" /></span>24 February, 2024</p>
@@ -69,8 +69,8 @@ const BlogDetails = ({ params }) => {
                            <div className="space-y-3">
                               <div>
                                  <label htmlFor="comment" className="flex gap-1">Your Comment <FaStarOfLife className="text-red-600 text-[8px]" /></label>
-                                 <textarea class="bg-gray-100 rounded border border-gray-400 leading-normal resize-none w-full h-20 py-2 px-3 font-medium placeholder-gray-700 focus:outline-none focus:bg-white" name="body" placeholder='Type Your Comment' required></textarea>
-                                 {/* <textarea rows={5} cols={5} type="text" name="" id="comment" className="w-full   rounded-md border border-description focus:outline-none" /> */}
+                                 {/* <textarea class="bg-gray-100 rounded border border-gray-400 leading-normal resize-none w-full h-20 py-2 px-3 font-medium placeholder-gray-700 focus:outline-none focus:bg-white" name="body" placeholder='Type Your Comment' required></textarea> */}
+                                 <textarea rows={5} cols={5} type="text" name="" id="comment" className="w-full   rounded-md border border-description focus:outline-none" />
                               </div>
                               <div>
                                  <label htmlFor="name" className="flex gap-1">Name <FaStarOfLife className="text-red-600 text-[8px]" /></label>
