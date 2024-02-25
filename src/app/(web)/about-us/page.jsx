@@ -1,5 +1,6 @@
 import AboutBanner from "@/Components/WebLayoutComponents/AboutUs/AboutBanner/AboutBanner";
 import KnowAboutUs from "@/Components/WebLayoutComponents/AboutUs/KnowAboutUs/KnowAboutUs";
+import Trainers from "@/Components/WebLayoutComponents/AboutUs/Trainers/Trainers";
 
 const AboutUsPage = () => {
 
@@ -7,6 +8,7 @@ const AboutUsPage = () => {
     <div>
        <AboutBanner></AboutBanner>
        <KnowAboutUs></KnowAboutUs>
+       <Trainers></Trainers>
     </div>
   )
 };
