@@ -9,13 +9,16 @@ import Container from "@/Components/Utils/Container";
 import { GoDotFill } from "react-icons/go";
 import Link from "next/link";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa6";
+import RouteBanner from "@/Components/WebLayoutComponents/Shared/RouteBanner/RouteBanner";
 const BlogPage = () => {
   const title = "Sales Training: Practical Techniques";
   const description =
     "Enhance your sales prowess with practical techniques focused on communication, negotiation, and customer relations. This course offers actionable insights for achieving greater success in sales.";
   return (
-    <Container>
+    <>
+      <RouteBanner title={'Blog'}/>
       <Section>
+      <Container>
         <div className="p-[2.5px] grid grid-cols-1 lg:grid-cols-12 gap-3 2xl:p-0">
           <div className="lg:col-span-8">
             <div className="grid grid-cols-1 md:grid-cols-2 3xl:grid-cols-3 gap-3 ">
@@ -281,8 +284,9 @@ const BlogPage = () => {
             </div>
           </div>
         </div>
-      </Section>
-    </Container >
+      </Container>
+    </Section >
+    </>
   )
 };
 

@@ -2,9 +2,9 @@ import { LuSearchX, LuShoppingCart } from "react-icons/lu";
 import { CgProfile } from "react-icons/cg";
 import { IoMenu } from "react-icons/io5";
 import { IoMdClose } from "react-icons/io";
-import Image from "next/image";
-// import Logo from "../NavbarLargeDevice/BottomNav/Logo";
 import { IoSearch } from "react-icons/io5";
+import ProfileDropdown from "../../DropDownAndMegaMenus/ProfileDropdown/ProfileDropdown";
+import Logo from "@/Components/Utils/Logo";
 const NavBottomSmall = ({
   openSidebar,
   setOpenSidebar,
@@ -13,19 +13,12 @@ const NavBottomSmall = ({
 }) => {
   return (
     <div className="flex items-center justify-between lg:hidden py-2">
-      <figure>
-        <Image
-          src={
-            "https://elearni.wpenginepowered.com/wp-content/uploads/2018/12/logo.png"
-          }
-          className="w-[110px]"
-          alt="logo"
-          width={120}
-          height={50}
-        />
-      </figure>
+      {/* Logo */}
+      <Logo/>
+      {/* Right side Buttons */}
       <div>
         <div className="flex items-center gap-3 text-gray-500 ">
+          {/* Search */}
           <button
             onClick={() => setIsSearchShow(!isSearchShow)}
             className={` duration-300 ${
@@ -37,13 +30,18 @@ const NavBottomSmall = ({
             isSearchShow ? <LuSearchX size={25}/>:<IoSearch size={25} />
           }
           </button>
+          {/* Cart */}
           <button className="hover:text-secondary hover:scale-110 duration-300 relative">
           <LuShoppingCart size={22} />
-          <span className="w-4 h-4 absolute -top-2 -right-1 rounded-full flex justify-center items-center  bg-primary text-white text-xs">0</span>
+          <span className="w-4 h-4 absolute -top-2  -right-1 rounded-full flex justify-center items-center  bg-primary text-white text-xs">0</span>
         </button>
+        {/* Profile / Join */}
+          <div className="relative group/profileDropDown flex items-center justify-center">
           <button className="hover:text-secondary duration-300">
             <CgProfile size={20} />
           </button>
+          <ProfileDropdown/>
+          </div>
           <button
             onClick={() => setOpenSidebar(!openSidebar)}
             className="hover:text-secondary duration-300 rotate-180">

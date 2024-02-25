@@ -70,3 +70,7 @@
   animation: statAnimaion 1.8s ease-in-out 0.6s;
   position: relative;
 }
+
+.animationDelay {
+  animation-delay: -2s;
+}
