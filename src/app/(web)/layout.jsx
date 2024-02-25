@@ -6,7 +6,7 @@ const WebLayout = ({ children }) => {
     <div className="">
       <NavBar />
       <div> {children}</div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

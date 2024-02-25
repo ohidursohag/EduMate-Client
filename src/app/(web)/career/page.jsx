@@ -1,9 +1,10 @@
+import RouteBanner from "@/Components/WebLayoutComponents/Shared/RouteBanner/RouteBanner";
 
 const CareerPage = () => {
 
   return (
     <div>
-       <div> This is CareerPage </div>
+       <RouteBanner title={'Career'}/>
     </div>
   )
 };
