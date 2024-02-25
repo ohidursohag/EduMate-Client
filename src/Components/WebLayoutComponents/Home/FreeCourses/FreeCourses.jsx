@@ -10,7 +10,9 @@ import { promises as fs } from 'fs'
 const FreeCourses = async () => {
   const file = await fs.readFile(process.cwd() + '/public/allCourses.json', 'utf8');
   const data = JSON.parse(file);
-  console.log(data)
+  // console.log(data.length)
+  const popularCourses = data.filter(course=> course.status ==='popular')
+  // console.log(popularCourses)
   return (
     <Section>
       <Container>
@@ -23,10 +25,9 @@ const FreeCourses = async () => {
         />
         {/* Blog Card */}
         <div className="grid grid-cols-1 lg:grid-cols-3 xl:grid-cols-2 3xl:grid-cols- gap-5  ">
-          <CoursesCard />
-          <CoursesCard />
-          <CoursesCard />
-          <CoursesCard />
+          {
+            popularCourses.slice(0,4).map((course,idx) =><CoursesCard key={idx} course={course}/>)
+          }
         </div>
       </Container>
     </Section>

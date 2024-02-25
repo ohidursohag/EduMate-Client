@@ -8,8 +8,8 @@ import { FaBookmark, FaStar, FaUser } from "react-icons/fa6";
 
 import DetailsButton from "./DetailsButton";
 
-const CoursesCard = () => {
-
+const CoursesCard = ({course}) => {
+const {category,} = course || []
   return (
     <div className="  shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px] hover:-translate-y-1 duration-700 hover:shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px] p-5 rounded-md flex flex-col sm:flex-row lg:flex-col xl:flex-row  md:max-w-full  gap-5">
       <div>
