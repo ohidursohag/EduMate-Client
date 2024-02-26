@@ -13,7 +13,7 @@ const FAQ = () => {
   return (
     <div className="max-w-[1000px] mx-auto">
       <Section>
-        <SectionTitle sectionName={'FAQ'} title={'You Ask? We Answer'}/>
+        <SectionTitle sectionName={'FAQ'} title={'You Ask? We Answer'} />
 
         <div className="flex justify-center items-center gap-10">
           <button onClick={() => setFaqToggleButton(0)} className={`py-2 px-4 border border-black rounded-3xl hover:bg-primary hover:text-white ${faqToggleButton === 0 ? "bg-primary text-white" : ""}`}>General</button>
