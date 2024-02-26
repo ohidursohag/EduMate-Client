@@ -124,9 +124,9 @@ const CoursesPage = () => {
             </div>
           </div>
 
-          {/* ============== right side categories section===================== */}
+          {/* ============== right side categories FILTER section===================== */}
 
-          <div className=" hidden md:block md:col-span-4 lg:col-span-3 space-y-6 p-4">
+          <div className=" hidden md:block md:col-span-4 lg:col-span-3 space-y-6 p-4 md:p-2 lg:p-4">
             <CourseCategories
               handleChangeCategories={handleChangeCategories}
               categoriesSelected={categoriesSelected}
@@ -145,7 +145,10 @@ const CoursesPage = () => {
 
           <div className={`${categoryFilter ? "block" : "hidden"} md:hidden `}>
             <CourseCategories
+              handleChangeCategories={handleChangeCategories}
               smallDevice={true}
+              categoriesSelected={categoriesSelected}
+              resetCheckedBox={resetCheckedBox}
               categoryFilter={categoryFilter}
             />
           </div>

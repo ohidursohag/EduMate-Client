@@ -67,7 +67,7 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="grid grid-cols-2  mx-5 gap-12 content-center  border-b-2  border-b-[#818181] lg:border-b-0     lg:border-r-2 md:place-content-start   lg:border-r-[#818181] pb-10 ">
+            <div className="grid grid-cols-2  mx-5 gap-12 content-center place-items-center  border-b-2  border-b-[#818181] lg:border-b-0     lg:border-r-2 md:place-content-start   lg:border-r-[#818181] pb-10 ">
               {/* ================menue content============= */}
               <div className="">
                 <h2 className="text-xl mb-4  text-white mt-4">Menu</h2>
@@ -143,9 +143,9 @@ const Footer = () => {
                         <input
                           type="text"
                           placeholder="Emaill address"
-                          className="px-2 w-2/3 md:w-full md:px-7 py-1 md:py-3 rounded-xl text-black border-0 "
+                          className=" w-3/4 md:w-full md:px-7 py-1.5 md:py-3 rounded-xl text-black border-0 "
                         />
-                        <button className="px-3 py-1  md:py-3 bg-[#250D87] rounded-md absolute right-16  md:right-0">
+                        <button className="  text-sm md:text-lg px-3 py-2  md:py-3 bg-[#250D87] rounded-md absolute right-7  md:right-0">
                           Subscribe
                         </button>
                       </label>

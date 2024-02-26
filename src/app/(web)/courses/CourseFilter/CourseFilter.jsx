@@ -7,7 +7,7 @@ import { MdOutlineCancel } from "react-icons/md";
 const CourseFilter = ({ categoryFilter, setcategoryFilter, filterCourse }) => {
   return (
     <div className="flex justify-between mb-9">
-      <p className="flex items-center  gap-4 text-sm">
+      <p className="flex items-center  gap-4  text-sm md:text-lg">
         {" "}
         <ImMenu className="text-2xl" /> showing {filterCourse?.length} result
       </p>
@@ -21,7 +21,7 @@ const CourseFilter = ({ categoryFilter, setcategoryFilter, filterCourse }) => {
       {categoryFilter ? (
         <button
           onClick={() => setcategoryFilter(!categoryFilter)}
-          className="flex  z-10 md:hidden items-center gap-3"
+          className={`flex  z-10 md:hidden items-center gap-3  `}
         >
           {" "}
           <MdOutlineCancel className="text-3xl text-red-400" />
@@ -31,7 +31,7 @@ const CourseFilter = ({ categoryFilter, setcategoryFilter, filterCourse }) => {
           onClick={() => setcategoryFilter(!categoryFilter)}
           className="flex md:hidden items-center gap-3  "
         >
-          <FaFilter className="text-3xl text-[#2C5F2D]" />
+          <FaFilter className="text-3xl text-[#250D87]" />
         </button>
       )}
     </div>

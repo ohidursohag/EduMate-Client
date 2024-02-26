@@ -13,7 +13,7 @@ const CoursesCard = ({ courseData, isflex, setFlex }) => {
     courseData;
 
   return (
-    <div className="  shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px] hover:-translate-y-1 duration-700 hover:shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px] p-5 rounded-md flex flex-col sm:flex-row  md:flex-col lg:flex-col xl:flex-col  md:max-w-full  gap-5">
+    <div className="  shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px] hover:-translate-y-1 duration-700 hover:shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]  p-5 md:p-3 lg:p-5 rounded-md flex flex-col sm:flex-row  md:flex-col lg:flex-col xl:flex-col  md:max-w-full  gap-5">
       <div>
         <Image
           src={img}
@@ -41,19 +41,21 @@ const CoursesCard = ({ courseData, isflex, setFlex }) => {
           </button>
         </div>
 
-        <h2 className="text-[21px]  font-bold pt-3 pb-1">{title}</h2>
-        <div className="flex justify-start items-center gap-10 pb-2">
-          <p className="flex items-center gap-2 font-medium">
+        <h2 className="text-[21px] md:text-base lg:text-xl  font-bold pt-3 pb-1">
+          {title}
+        </h2>
+        <div className="flex justify-start items-center gap-1 pb-2 whitespace-nowrap">
+          <p className="flex items-center gap-2 md:gap-1 lg:gap-2  font-medium">
             <LuBook />
             12 Lession
           </p>
-          <p className="flex items-center gap-2 font-medium">
+          <p className="flex items-centergap-2 md:gap-1 lg:gap-2  font-medium ">
             <FaUser />
             50 Students
           </p>
         </div>
 
-        <p className="text-gray-600 line-clamp-2">{description}</p>
+        <p className="text-gray-600 line-clamp-2 ">{description}</p>
         <div className="flex items-center justify-start gap-5 pt-3">
           <Image
             src={img1}
