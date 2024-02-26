@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 
-const ReviewCrd = ({ name, image, designation, description }) => {
+const ReviewCard = ({ name, image, designation, description }) => {
    return (
       <div className='flex flex-col justify-center items-center pr-4 pt-8'>
          <div className='flex justify-center items-center border-2 w-[400px] md:w-[600px] bg-white shadow-md rounded-lg'>
@@ -25,4 +25,4 @@ const ReviewCrd = ({ name, image, designation, description }) => {
    );
 };
 
-export default ReviewCrd;
+export default ReviewCard;

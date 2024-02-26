@@ -2,14 +2,14 @@
 
 import React, { useEffect, useState } from 'react';
 import Marquee from 'react-fast-marquee';
-import ReviewCrd from './ReviewCrd';
+import ReviewCard from './ReviewCard';
 
-const Reviews = () => {
+const Review = () => {
    const arr = ["aditya", "paul"]
    const [reviews, setReviews] = useState([]);
    useEffect(() => {
       const fetchData = async () => {
-         const res = await fetch('/reviews.json');
+         const res = await fetch('/review.json');
          const data = await res.json();
          setReviews(data);
       };
@@ -23,7 +23,7 @@ const Reviews = () => {
             {
                reviews.map(data =>
                   <div key={data.name}>
-                     <ReviewCrd name={data.name} image={data.image} designation={data.designation} description={data.description}></ReviewCrd>
+                     <ReviewCard name={data.name} image={data.image} designation={data.designation} description={data.description}></ReviewCard>
                   </div>
                )
             }
@@ -34,4 +34,4 @@ const Reviews = () => {
    );
 };
 
-export default Reviews;
+export default Review;
