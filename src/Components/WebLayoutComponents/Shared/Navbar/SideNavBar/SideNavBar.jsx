@@ -4,8 +4,8 @@ import SidebarNavLinks from "./SidebarNavLinks";
 import { MdOutlineEmail } from "react-icons/md";
 import { IoCallOutline } from "react-icons/io5";
 import { IoMdClose } from "react-icons/io";
-import Logo from "../BottomNav/BottomNavLarge/Logo";
 import SocialIcons from "../Shared/SocialIcons";
+import Logo from "@/Components/Utils/Logo";
 const SideNavBar = ({ openSidebar, setOpenSidebar }) => {
   const refWraper = useOutsideClikToClose(setOpenSidebar);
   return (

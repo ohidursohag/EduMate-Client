@@ -8,7 +8,7 @@ const LatestCourseDemo = ({ freeCourse }) => {
       <div className="flex items-center gap-3">
         <figure>
           <Image
-            className="h-[80px] w-[150px]"
+            className="w-[80px]"
             src={img}
             width={300}
             height={200}

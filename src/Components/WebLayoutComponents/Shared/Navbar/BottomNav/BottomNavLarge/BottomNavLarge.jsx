@@ -1,11 +1,11 @@
+import Logo from "@/Components/Utils/Logo";
 import LoginAndOtherIcon from "./LoginAndOtherIcon";
-import Logo from "./Logo";
 import NavLinks from "./NavLinks";
 
 const BottomNavLarge = ({ isSearchShow, setIsSearchShow }) => {
   return (
     <div className="h-16 hidden lg:flex gap-5  justify-between items-center">
-      <Logo />
+      <Logo/>
       <NavLinks />
       <LoginAndOtherIcon
         isSearchShow={isSearchShow}

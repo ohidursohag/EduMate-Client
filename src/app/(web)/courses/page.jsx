@@ -8,7 +8,7 @@ import CourseFilter from "./CourseFilter/CourseFilter";
 import { useEffect, useState } from "react";
 const CoursesPage = () => {
   const [getCourseData, setCourseData] = useState([]);
-
+  const [isflex, setFlex] = useState(false);
   const [categoryFilter, setcategoryFilter] = useState(false);
   const [categoriesSelected, setCategoriesSelected] = useState({
     development: false,
@@ -47,6 +47,7 @@ const CoursesPage = () => {
 
   // =============state checkign is all category selected or not then filter based on categories==================
   const filterCourse = getCourseData.flatMap((category) => {
+    console.log(category);
     if (Object.values(categoriesSelected).every((value) => !value)) {
       return category.courses;
     } else {
@@ -86,11 +87,16 @@ const CoursesPage = () => {
               setcategoryFilter={setcategoryFilter}
             ></CourseFilter>
 
-            {/* ============ left side card section========================= */}
+            {/* ============ left side Coursecard section========================= */}
 
             <div className="grid gap-3 md:grid-cols-2 lg:grid-cols-3    ">
-              {filterCourse?.map((course, index) => (
-                <CourseCard courseData={course} key={index}></CourseCard>
+              {filterCourse?.slice(0, 6).map((course, index) => (
+                <CourseCard
+                  // isflex={flex}
+                  // setFlex={setFlex}
+                  courseData={course}
+                  key={index}
+                ></CourseCard>
               ))}
 
               {/* 
@@ -109,6 +115,7 @@ const CoursesPage = () => {
           <div className=" hidden md:block md:col-span-4 lg:col-span-3 space-y-6 p-4">
             <CourseCategories handleChangeCategories={handleChangeCategories} />
             <h2 className="text-2xl relative font-medium mb-6 ">Latest </h2>
+
             <div className=" flex flex-col gap-4">
               {latestFreeCourses.map((freeCourse, index) => (
                 <LatestCourseDemo freeCourse={freeCourse} key={index} />
@@ -116,7 +123,7 @@ const CoursesPage = () => {
             </div>
           </div>
 
-          {/* slidebar for small device */}
+          {/* =================slidebar for small device============= */}
 
           <div className={`${categoryFilter ? "block" : "hidden"} md:hidden `}>
             <CourseCategories
@@ -124,6 +131,10 @@ const CoursesPage = () => {
               categoryFilter={categoryFilter}
             />
           </div>
+        </div>
+
+        <div className="pagination">
+          <button></button>
         </div>
       </div>
     </Container>

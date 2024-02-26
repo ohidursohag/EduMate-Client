@@ -1,0 +1,732 @@
+[
+  {
+    "category": "Programming",
+    "title": "Python for Beginners",
+    "img": "https://media.istockphoto.com/id/1189210101/photo/python-programming-language-concept-woman-developer-with-her-hand-holding-modern-sign-with.webp?b=1&s=170667a&w=0&k=20&c=2olSCm8U7KNUS6RuCFZcgrPvWy_H_QMgyLbAZWnFJ28=",
+    "description": "Learn Python programming language from scratch. This course covers basic syntax, data structures, and control flow.",
+    "total_lesson": 12,
+    "total_enrolled_students": 50,
+    "status": "regular",
+    "pricing": "Free",
+    "amount": 0,
+    "starting_date": "2024-03-01",
+    "rating": 4.5,
+    "duration": "6 weeks",
+    "time_per_week": 5,
+    "discount": null,
+    "instructor": {
+      "name": "John Smith",
+      "img": "https://img.freepik.com/free-photo/bohemian-man-with-his-arms-crossed_1368-3542.jpg?size=626&ext=jpg&ga=GA1.1.1109476174.1700924986&semt=sph",
+      "qualifications": "Bachelor's degree in Computer Science",
+      "responsibilities": "Designing course curriculum, conducting lectures, providing feedback to students"
+    },
+    "what_you_learn": [
+      "Python syntax and basic programming concepts",
+      "Working with data structures like lists, tuples, and dictionaries",
+      "Control flow and decision making in Python",
+      "Writing and running Python scripts",
+      "Debugging and troubleshooting Python code"
+    ],
+    "course_includes": "Video lectures, coding exercises, quizzes, downloadable resources",
+    "course_roadmap": "Week 1: Introduction to Python, Week 2-3: Python basics, Week 4-5: Intermediate Python concepts, Week 6: Final project",
+    "about_course": "This course is designed for absolute beginners who want to learn Python programming for various applications.",
+    "course_content": "Introduction to Python; Variables and data types; Control flow statements; Functions and modules; File handling; Introduction to object-oriented programming (OOP)",
+    "faq": [
+      {
+        "question": "Do I need any prior programming experience?",
+        "answer": "No, this course is suitable for complete beginners."
+      },
+      {
+        "question": "Are there any assignments or projects?",
+        "answer": "Yes, there will be coding exercises and a final project to apply your skills."
+      },
+      {
+        "question": "Is this course self-paced?",
+        "answer": "Yes, you can study at your own pace within the duration of the course."
+      }
+    ],
+    "course_access_time": "Lifetime access"
+  },
+  {
+    "category": "Programming",
+    "title": "Advanced Java Programming",
+    "img": "https://img.freepik.com/free-vector/laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon_39422-971.jpg?size=626&ext=jpg&ga=GA1.1.957612158.1688363626&semt=ais",
+    "description": "Take your Java skills to the next level. This course delves into advanced topics such as multithreading, networking, and GUI programming.",
+    "total_lesson": 16,
+    "total_enrolled_students": 80,
+    "status": "popular",
+    "pricing": "Paid",
+    "amount": 99.99,
+    "starting_date": "2024-04-15",
+    "rating": 4.7,
+    "duration": "8 weeks",
+    "time_per_week": 7,
+    "discount": 20,
+    "instructor": {
+      "name": "Emily Johnson",
+      "img": "https://img.freepik.com/free-photo/cheerful-indian-businessman-smiling-closeup-portrait-jobs-career-campaign_53876-129417.jpg?size=626&ext=jpg&ga=GA1.1.1109476174.1700924986&semt=sph",
+      "qualifications": "Master's degree in Computer Science",
+      "responsibilities": "Developing course materials, mentoring students, conducting live coding sessions"
+    },
+    "what_you_learn": [
+      "Advanced Java syntax and concepts",
+      "Multithreading and concurrency in Java",
+      "Network programming with sockets",
+      "GUI development using Swing and JavaFX",
+      "Error handling and debugging strategies"
+    ],
+    "course_includes": "Video lectures, hands-on coding projects, quizzes, live Q&A sessions",
+    "course_roadmap": "Week 1-2: Advanced syntax and concepts, Week 3-4: Multithreading and concurrency, Week 5-6: Network programming, Week 7-8: GUI development",
+    "about_course": "This course is for Java programmers who want to deepen their understanding of the language and explore advanced topics.",
+    "course_content": "Advanced data structures; Generics and collections framework; Exception handling; Java I/O; Database connectivity; Introduction to JavaFX",
+    "faq": [
+      {
+        "question": "Is this course suitable for beginners?",
+        "answer": "No, this course requires prior knowledge of basic Java programming."
+      },
+      {
+        "question": "Will there be any live sessions?",
+        "answer": "Yes, there will be weekly live Q&A sessions where you can interact with the instructor."
+      },
+      {
+        "question": "Do I need any special software?",
+        "answer": "You will need the Java Development Kit (JDK) and an IDE such as Eclipse or IntelliJ IDEA."
+      }
+    ],
+    "course_access_time": "Lifetime access"
+  },
+  {
+    "category": "Data Science",
+    "title": "Introduction to Data Analysis",
+    "img": "https://img.freepik.com/free-vector/web-seo-isometric-composition-with-content-analysis-symbols-illustration_1284-28699.jpg?size=626&ext=jpg&ga=GA1.1.957612158.1688363626&semt=ais",
+    "description": "Learn the basics of data analysis using Python. This course covers data cleaning, visualization, and basic statistical analysis.",
+    "total_lesson": 12,
+    "total_enrolled_students": 50,
+    "status": "regular",
+    "amount": 0,
+    "pricing": "Free",
+    "starting_date": "2024-03-10",
+    "rating": 4.3,
+    "duration": "4 weeks",
+    "time_per_week": 6,
+    "discount": null,
+    "instructor": {
+      "name": "Jessica Brown",
+      "img": "https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?size=626&ext=jpg&ga=GA1.1.1109476174.1700924986&semt=sph",
+      "qualifications": "Ph.D. in Statistics",
+      "responsibilities": "Developing course curriculum, conducting live coding sessions, providing personalized feedback"
+    },
+    "what_you_learn": [
+      "Data cleaning and preprocessing techniques",
+      "Data visualization using libraries like Matplotlib and Seaborn",
+      "Basic statistical analysis methods",
+      "Exploratory data analysis (EDA)",
+      "Introduction to pandas library for data manipulation"
+    ],
+    "course_includes": "Video lectures, coding assignments, quizzes, downloadable datasets",
+    "course_roadmap": "Week 1: Introduction to data analysis, Week 2: Data cleaning and preprocessing, Week 3: Data visualization, Week 4: Basic statistics and EDA",
+    "about_course": "This course is suitable for beginners who want to learn foundational skills in data analysis using Python.",
+    "course_content": "Introduction to data analysis; Data cleaning and preprocessing; Data visualization; Descriptive statistics; Exploratory data analysis",
+    "faq": [
+      {
+        "question": "Do I need any prior programming knowledge?",
+        "answer": "Basic knowledge of Python programming is recommended but not required."
+      },
+      {
+        "question": "Will there be assignments to practice?",
+        "answer": "Yes, there will be coding assignments to reinforce your learning."
+      },
+      {
+        "question": "Is this course focused on any specific field?",
+        "answer": "No, the course covers general data analysis techniques applicable across various domains."
+      }
+    ],
+    "course_access_time": "Lifetime access"
+  },
+  {
+    "category": "Data Science",
+    "title": "Machine Learning Fundamentals",
+    "img": "https://img.freepik.com/free-photo/humanoid-robot-working-with-machine-factory-ai-generative_123827-23863.jpg?size=626&ext=jpg&ga=GA1.1.957612158.1688363626&semt=ais",
+    "description": "Get started with machine learning. This course covers popular algorithms, model evaluation, and practical applications.",
+    "total_lesson": 8,
+    "total_enrolled_students": 200,
+    "status": "trending",
+    "pricing": "Paid",
+    "amount": 149.99,
+    "starting_date": "2024-04-01",
+    "rating": 4.8,
+    "duration": "10 weeks",
+    "time_per_week": 8,
+    "discount": null,
+    "instructor": {
+      "name": "Michael Anderson",
+      "img": "https://img.freepik.com/free-photo/waist-up-portrait-handsome-serious-unshaven-male-keeps-hands-together-dressed-dark-blue-shirt-has-talk-with-interlocutor-stands-against-white-wall-self-confident-man-freelancer_273609-16320.jpg?size=626&ext=jpg&ga=GA1.1.1109476174.1700924986&semt=sph",
+      "qualifications": "Master's degree in Artificial Intelligence",
+      "responsibilities": "Creating course materials, leading group projects, providing career guidance"
+    },
+    "what_you_learn": [
+      "Supervised and unsupervised learning algorithms",
+      "Model evaluation and validation techniques",
+      "Feature engineering and selection",
+      "Practical applications of machine learning",
+      "Introduction to neural networks and deep learning"
+    ],
+    "course_includes": "Video lectures, coding exercises, real-world projects, mentorship sessions",
+    "course_roadmap": "Week 1-2: Introduction to ML and Python libraries, Week 3-4: Supervised learning algorithms, Week 5-6: Unsupervised learning algorithms, Week 7-8: Model evaluation and validation, Week 9-10: Advanced topics and projects",
+    "about_course": "This course is designed for individuals interested in exploring machine learning concepts and applications.",
+    "course_content": "Introduction to machine learning; Linear regression; Logistic regression; Decision trees and random forests; Clustering algorithms; Introduction to neural networks",
+    "faq": [
+      {
+        "question": "What background knowledge is required for this course?",
+        "answer": "Basic understanding of Python programming and linear algebra is recommended."
+      },
+      {
+        "question": "Will I receive any certification?",
+        "answer": "Yes, upon successful completion, you will receive a certificate of completion."
+      },
+      {
+        "question": "Are there any prerequisites?",
+        "answer": "No, but familiarity with Python programming will be beneficial."
+      }
+    ],
+    "course_access_time": "Lifetime access"
+  },
+  {
+    "category": "Graphic Design",
+    "title": "Adobe Photoshop Mastery",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9hjZMl-jOPQTMlH5MqHDYVVizNnyx1x-Bbg&usqp=CAU",
+    "description": "Master the art of digital image manipulation with Adobe Photoshop. This course covers tools, techniques, and creative projects.",
+    "total_lesson": 13,
+    "total_enrolled_students": 702,
+    "status": "popular",
+    "pricing": "Paid",
+    "amount": 79.99,
+    "starting_date": "2024-03-20",
+    "rating": 4.6,
+    "duration": "6 weeks",
+    "time_per_week": 4,
+    "discount": 15,
+    "instructor": {
+      "name": "Sophia Lee",
+      "img": "https://img.freepik.com/free-photo/pretty-self-confident-female-model-with-afro-hair-keeps-hand-raised-smiles-gently-looks-directly-listens-attentively-interlocutor-wears-stylish-velvet-jacket_273609-46286.jpg?size=626&ext=jpg&ga=GA1.1.1109476174.1700924986&semt=sph",
+      "qualifications": "Graphic Design Professional Certification",
+      "responsibilities": "Developing course curriculum, providing personalized feedback, conducting portfolio reviews"
+    },
+    "what_you_learn": [
+      "Understanding Photoshop interface and tools",
+      "Image editing and retouching techniques",
+      "Creating and manipulating layers",
+      "Designing graphics and illustrations",
+      "Working with text and typography"
+    ],
+    "course_includes": "Video tutorials, hands-on projects, downloadable resources, critique sessions",
+    "course_roadmap": "Week 1: Introduction to Photoshop, Week 2-3: Basic image editing, Week 4-5: Advanced techniques, Week 6: Final project and portfolio review",
+    "about_course": "This course is suitable for aspiring graphic designers who want to master Adobe Photoshop.",
+    "course_content": "Introduction to Photoshop; Basic photo editing; Layer manipulation; Advanced techniques like masking and blending; Typography and text effects",
+    "faq": [
+      {
+        "question": "Do I need any prior graphic design experience?",
+        "answer": "No, this course is suitable for beginners."
+      },
+      {
+        "question": "Will I receive feedback on my projects?",
+        "answer": "Yes, there will be critique sessions to provide feedback on your work."
+      },
+      {
+        "question": "Are there any software requirements?",
+        "answer": "You will need access to Adobe Photoshop software."
+      }
+    ],
+    "course_access_time": "Lifetime access"
+  },
+  {
+    "category": "Graphic Design",
+    "title": "Typography Fundamentals",
+    "img": "https://static.skillshare.com/uploads/parentClasses/0ac06f345f4b6698a28d97274bcfcca6/8770bbcc",
+    "description": "Explore the principles of typography in graphic design. This course covers type anatomy, hierarchy, and layout design.",
+    "total_lesson": 14,
+    "total_enrolled_students": 150,
+    "status": "popular",
+    "pricing": "Free",
+    "starting_date": "2024-04-05",
+    "rating": 4.2,
+    "duration": "4 weeks",
+    "time_per_week": 3,
+    "discount": null,
+    "instructor": {
+      "name": "David Miller",
+      "img": "https://img.freepik.com/premium-photo/beutiful-turkish-young-woman-crossed-arm-posing-confident-mood-smiling-grey-background-studio-shot_627567-1149.jpg?size=626&ext=jpg&ga=GA1.1.1109476174.1700924986&semt=sph",
+      "qualifications": "Bachelor's degree in Graphic Design",
+      "responsibilities": "Developing course content, facilitating discussions, providing feedback"
+    },
+    "what_you_learn": [
+      "Understanding type anatomy and terminology",
+      "Creating effective typographic hierarchy",
+      "Exploring different font families and styles",
+      "Layout design principles for typography",
+      "Typography in branding and advertising"
+    ],
+    "course_includes": "Video lectures, practical exercises, reading materials, discussion forums",
+    "course_roadmap": "Week 1: Introduction to typography, Week 2: Type anatomy and terminology, Week 3: Typographic hierarchy, Week 4: Layout design with typography",
+    "about_course": "This course is designed for designers, artists, and anyone interested in mastering the art of typography.",
+    "course_content": "Introduction to typography; Anatomy of type; Typographic hierarchy; Layout principles; Typography in branding",
+    "faq": [
+      {
+        "question": "Is this course suitable for beginners?",
+        "answer": "Yes, this course is designed for learners at all levels."
+      },
+      {
+        "question": "Will there be practical exercises?",
+        "answer": "Yes, you will have hands-on exercises to apply what you've learned."
+      },
+      {
+        "question": "What software do I need?",
+        "answer": "No specific software is required for this course."
+      }
+    ],
+    "course_access_time": "Lifetime access"
+  },
+  {
+    "category": "Language Learning",
+    "title": "Spanish for Beginners",
+    "img": "https://img.freepik.com/premium-photo/learn-spanish-foreign-language-human-brain-spain-flag-color-website-banner-letters-articles-word-preposition-vocabulary-grammar-3d-rendering-studying-online-course-education-listening-reading-fluency_897771-1462.jpg?size=626&ext=jpg&ga=GA1.1.957612158.1688363626&semt=ais",
+    "description": "Start learning Spanish from scratch. This course covers basic vocabulary, grammar, and conversational skills.",
+    "total_lesson": 14,
+    "total_enrolled_students": 500,
+    "status": "popular",
+    "pricing": "Free",
+    "starting_date": "2024-03-15",
+    "rating": 4.4,
+    "duration": "8 weeks",
+    "time_per_week": 6,
+    "discount": null,
+    "instructor": {
+      "name": "Carlos Rodriguez",
+      "img": "https://img.freepik.com/free-photo/smiling-young-man-with-crossed-arms-outdoors_1140-255.jpg?size=626&ext=jpg&ga=GA1.1.1109476174.1700924986&semt=sph",
+      "qualifications": "Certified Spanish Language Instructor",
+      "responsibilities": "Developing lesson plans, conducting live sessions, providing cultural insights"
+    },
+    "what_you_learn": [
+      "Basic Spanish vocabulary and phrases",
+      "Grammar rules and sentence structure",
+      "Listening and speaking skills",
+      "Reading and writing exercises",
+      "Cultural aspects of Spanish-speaking countries"
+    ],
+    "course_includes": "Video lessons, interactive exercises, quizzes, live speaking sessions",
+    "course_roadmap": "Week 1-2: Introduction and basic greetings, Week 3-4: Vocabulary and grammar essentials, Week 5-6: Conversation practice, Week 7-8: Cultural insights and review",
+    "about_course": "This course is designed for complete beginners who want to learn Spanish for travel, work, or personal enrichment.",
+    "course_content": "Introduction to Spanish; Alphabet and pronunciation; Basic phrases and expressions; Verb conjugation; Common vocabulary",
+    "faq": [
+      {
+        "question": "Do I need any prior knowledge of Spanish?",
+        "answer": "No, this course is suitable for absolute beginners."
+      },
+      {
+        "question": "Will there be opportunities to practice speaking?",
+        "answer": "Yes, there will be live speaking sessions to practice conversational skills."
+      },
+      {
+        "question": "Can I access course materials after the course ends?",
+        "answer": "Yes, you will have lifetime access to course materials."
+      }
+    ],
+    "course_access_time": "Lifetime access"
+  },
+  {
+    "category": "Language Learning",
+    "title": "Advanced French Conversation",
+    "img": "https://img.freepik.com/premium-photo/chalkboard-3d-style-with-pixar-concept-there-is-3-building-drawing-chalkboard-eiffel_973275-116676.jpg?size=626&ext=jpg&ga=GA1.1.957612158.1688363626&semt=ais_ai_generated",
+    "description": "Enhance your French speaking skills through advanced conversation practice. This course focuses on fluency and cultural nuances.",
+    "total_lesson": 12,
+    "total_enrolled_students": 450,
+    "status": "regular",
+
+    "pricing": "Paid",
+    "amount": 69.99,
+    "starting_date": "2024-04-10",
+    "rating": 4.5,
+    "duration": "6 weeks",
+    "time_per_week": 5,
+    "discount": null,
+    "instructor": {
+      "name": "Sophie Martin",
+      "img": "https://img.freepik.com/free-photo/handsome-man-presenting-something_1368-87.jpg?size=626&ext=jpg&ga=GA1.1.1109476174.1700924986&semt=sph",
+      "qualifications": "French Language Expert, DELF Certified",
+      "responsibilities": "Developing lesson plans, conducting group discussions, providing feedback"
+    },
+    "what_you_learn": [
+      "Advanced vocabulary and idiomatic expressions",
+      "Fluent conversation on various topics",
+      "French culture, history, and society",
+      "Listening comprehension skills",
+      "Practical tips for improving fluency"
+    ],
+    "course_includes": "Video lectures, interactive discussions, role-playing exercises, cultural insights",
+    "course_roadmap": "Week 1-2: Advanced vocabulary and expressions, Week 3-4: Cultural topics and discussions, Week 5-6: Role-playing scenarios and fluency practice",
+    "about_course": "This course is designed for learners with intermediate to advanced proficiency in French who want to refine their speaking skills.",
+    "course_content": "Advanced vocabulary; Idioms and expressions; Cultural discussions; Role-playing scenarios; Pronunciation practice",
+    "faq": [
+      {
+        "question": "Is this course suitable for beginners?",
+        "answer": "No, this course is intended for learners with prior knowledge of French."
+      },
+      {
+        "question": "Will there be opportunities for interaction with the instructor?",
+        "answer": "Yes, there will be interactive discussions and role-playing exercises."
+      },
+      {
+        "question": "Can I get a certificate upon completion?",
+        "answer": "Yes, you will receive a certificate of completion."
+      }
+    ],
+    "course_access_time": "Lifetime access"
+  },
+  {
+    "category": "Web Development",
+    "title": "HTML & CSS Basics",
+    "img": "https://img.freepik.com/free-photo/html-system-websites-concept_23-2150323500.jpg?size=626&ext=jpg&ga=GA1.1.957612158.1688363626&semt=ais",
+    "description": "Learn the fundamentals of web development with HTML and CSS. This course covers building static web pages and basic styling.",
+    "total_lesson": 12,
+    "total_enrolled_students": 50,
+    "status": "regular",
+    "pricing": "Free",
+    "starting_date": "2024-03-25",
+    "rating": 4.0,
+    "duration": "5 weeks",
+    "time_per_week": 4,
+    "discount": null,
+    "instructor": {
+      "name": "Anna Wilson",
+      "img": "anna_wilson.jpg",
+      "qualifications": "Web Development Specialist",
+      "responsibilities": "Creating course materials, leading live coding sessions, providing technical support"
+    },
+    "what_you_learn": [
+      "Building web pages with HTML5",
+      "Styling websites using CSS3",
+      "Understanding responsive design principles",
+      "Basic web layout and structure",
+      "Introduction to CSS frameworks like Bootstrap"
+    ],
+    "course_includes": "Video tutorials, coding exercises, quizzes, downloadable resources",
+    "course_roadmap": "Week 1: Introduction to HTML, Week 2: HTML elements and structure, Week 3: Introduction to CSS, Week 4: Styling with CSS, Week 5: Responsive design and CSS frameworks",
+    "about_course": "This course is ideal for beginners who want to start their journey in web development.",
+    "course_content": "Introduction to HTML; HTML elements and attributes; CSS syntax and selectors; Styling properties; Responsive design principles",
+    "faq": [
+      {
+        "question": "Do I need any prior coding experience?",
+        "answer": "No, this course is designed for complete beginners."
+      },
+      {
+        "question": "Will I learn about responsive design?",
+        "answer": "Yes, responsive design principles are covered in the course."
+      },
+      {
+        "question": "Can I use any text editor for coding?",
+        "answer": "Yes, you can use any text editor or IDE of your choice."
+      }
+    ],
+    "course_access_time": "Lifetime access"
+  },
+  {
+    "category": "Web Development",
+    "title": "JavaScript Fundamentals",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzyN7pxjqQLi80ThKi-hyr1WRmnqKcnFZR1w&usqp=CAU",
+    "description": "Master the basics of JavaScript programming. This course covers variables, functions, loops, and DOM manipulation.",
+    "total_lesson": 22,
+    "total_enrolled_students": 570,
+    "status": "trending",
+    "pricing": "Paid",
+    "amount": 49.99,
+    "starting_date": "2024-04-20",
+    "rating": 4.3,
+    "duration": "6 weeks",
+    "time_per_week": 5,
+    "discount": 10,
+    "instructor": {
+      "name": "Daniel Clark",
+      "img": "daniel_clark.jpg",
+      "qualifications": "Full-stack Developer, JavaScript Expert",
+      "responsibilities": "Developing course materials, conducting live coding sessions, providing code reviews"
+    },
+    "what_you_learn": [
+      "JavaScript syntax and basic programming concepts",
+      "Working with variables, arrays, and objects",
+      "Conditional statements and loops",
+      "DOM manipulation and event handling",
+      "Introduction to asynchronous programming"
+    ],
+    "course_includes": "Video lectures, coding exercises, quizzes, live coding challenges",
+    "course_roadmap": "Week 1-2: JavaScript basics and syntax, Week 3-4: Working with DOM and events, Week 5: Asynchronous programming, Week 6: Final project",
+    "about_course": "This course is designed for aspiring web developers who want to learn JavaScript for building interactive web applications.",
+    "course_content": "Introduction to JavaScript; Variables and data types; Control flow statements; Functions and scope; DOM manipulation",
+    "faq": [
+      {
+        "question": "Is this course suitable for beginners?",
+        "answer": "Yes, this course is beginner-friendly."
+      },
+      {
+        "question": "Will there be hands-on coding exercises?",
+        "answer": "Yes, there will be coding exercises to practice each concept."
+      },
+      {
+        "question": "Do I need any special software?",
+        "answer": "You will need a modern web browser and a text editor for coding."
+      }
+    ],
+    "course_access_time": "Lifetime access"
+  },
+  {
+    "category": "Photography & Videography",
+    "title": "Introduction to DSLR Photography",
+    "img": "https://img.freepik.com/premium-photo/world-photography-day-minimal-objects-concept-photo-shoot_950002-12798.jpg?size=626&ext=jpg&ga=GA1.1.957612158.1688363626&semt=ais_ai_generated",
+    "description": "Learn the basics of digital photography with a DSLR camera. This course covers camera settings, composition, and exposure.",
+    "total_lesson": 17,
+    "total_enrolled_students": 290,
+    "status": "trending",
+    "pricing": "Paid",
+    "amount": 59.99,
+    "starting_date": "2024-03-30",
+    "rating": 4.7,
+    "duration": "4 weeks",
+    "time_per_week": 3,
+    "discount": null,
+    "instructor": {
+      "name": "Olivia Davis",
+      "img": "https://img.freepik.com/free-photo/waist-up-portrait-handsome-serious-unshaven-male-keeps-hands-together-dressed-dark-blue-shirt-has-talk-with-interlocutor-stands-against-white-wall-self-confident-man-freelancer_273609-16320.jpg?size=626&ext=jpg&ga=GA1.1.1109476174.1700924986&semt=sph",
+      "qualifications": "Professional Photographer, Photography Instructor",
+      "responsibilities": "Developing course curriculum, providing personalized feedback, organizing photo walks"
+    },
+    "what_you_learn": [
+      "Understanding camera settings and controls",
+      "Composition rules and techniques",
+      "Mastering exposure and lighting",
+      "Post-processing basics",
+      "Photography genres and styles"
+    ],
+    "course_includes": "Video tutorials, practical assignments, critiques, photo critiques",
+    "course_roadmap": "Week 1: Camera basics and exposure, Week 2: Composition and framing, Week 3: Lighting techniques, Week 4: Post-processing and final project",
+    "about_course": "This course is designed for beginners who want to learn photography techniques and principles.",
+    "course_content": "Camera anatomy and controls; Exposure triangle; Rule of thirds; Lighting techniques; Basic photo editing",
+    "faq": [
+      {
+        "question": "Do I need any prior photography experience?",
+        "answer": "No, this course is suitable for beginners."
+      },
+      {
+        "question": "What type of camera do I need?",
+        "answer": "You can use any digital camera, including DSLRs, mirrorless, or even smartphones."
+      },
+      {
+        "question": "Will there be practical assignments?",
+        "answer": "Yes, there will be hands-on assignments to apply what you've learned."
+      }
+    ],
+    "course_access_time": "Lifetime access"
+  },
+  {
+    "category": "Photography & Videography",
+    "title": "Advanced Photo Editing with Lightroom",
+    "img": "https://img.freepik.com/free-photo/adult-woman-exuding-elegance-studio-portrait-generative-ai_188544-12091.jpg?size=626&ext=jpg&ga=GA1.1.957612158.1688363626&semt=ais",
+    "description": "Take your photo editing skills to the next level with Adobe Lightroom. This course covers advanced editing techniques and workflow optimization.",
+    "total_lesson": 8,
+    "total_enrolled_students": 750,
+    "status": "popular",
+    "pricing": "Paid",
+    "amount": 69.99,
+    "starting_date": "2024-04-08",
+    "rating": 4.6,
+    "duration": "6 weeks",
+    "time_per_week": 4,
+    "discount": null,
+    "instructor": {
+      "name": "Ethan Taylor",
+      "img": "https://img.freepik.com/free-photo/portrait-young-businesswoman-holding-eyeglasses-hand-against-gray-backdrop_23-2148029483.jpg?size=626&ext=jpg&ga=GA1.1.1109476174.1700924986&semt=sph",
+      "qualifications": "Professional Photographer, Adobe Certified Expert",
+      "responsibilities": "Developing course content, providing expert guidance, conducting live editing sessions"
+    },
+    "what_you_learn": [
+      "Advanced photo editing techniques in Lightroom",
+      "Workflow optimization and organization",
+      "Using presets and creating custom presets",
+      "Selective editing and adjustment brushes",
+      "Exporting and sharing finalized images"
+    ],
+    "course_includes": "Video tutorials, hands-on editing projects, live Q&A sessions, downloadable presets",
+    "course_roadmap": "Week 1-2: Introduction to Lightroom and basic editing, Week 3-4: Advanced editing techniques, Week 5-6: Workflow optimization and final projects",
+    "about_course": "This course is for photographers who want to enhance their editing skills and streamline their workflow with Adobe Lightroom.",
+    "course_content": "Introduction to Lightroom interface; Basic and advanced editing tools; Workflow organization; Exporting and sharing options",
+    "faq": [
+      {
+        "question": "Do I need any prior experience with Lightroom?",
+        "answer": "Basic familiarity with Lightroom is recommended, but not required."
+      },
+      {
+        "question": "Will there be live editing sessions?",
+        "answer": "Yes, there will be live Q&A sessions where you can watch the instructor edit photos in real-time."
+      },
+      {
+        "question": "Can I use Lightroom Classic or Lightroom CC?",
+        "answer": "The course primarily focuses on Lightroom Classic, but many concepts apply to Lightroom CC as well."
+      }
+    ],
+    "course_access_time": "Lifetime access"
+  },
+  {
+    "category": "Business & Entrepreneurship",
+    "title": "Introduction to Marketing",
+    "img": "https://img.freepik.com/premium-photo/marketing-banner-hang-arrow-hit-bull-eye_698953-12690.jpg?size=626&ext=jpg&ga=GA1.1.957612158.1688363626&semt=ais",
+    "description": "Gain an understanding of marketing fundamentals. This course covers market research, segmentation, and marketing strategies.",
+    "total_lesson": 7,
+    "total_enrolled_students": 890,
+    "status": "popular",
+    "pricing": "Free",
+    "starting_date": "2024-03-12",
+    "rating": 4.1,
+    "duration": "6 weeks",
+    "time_per_week": 5,
+    "discount": null,
+    "instructor": {
+      "name": "Mark Thompson",
+      "img": "https://img.freepik.com/free-photo/handsome-bearded-businessman-rubbing-hands-having-deal_176420-18778.jpg?size=626&ext=jpg&ga=GA1.1.1109476174.1700924986&semt=sph",
+      "qualifications": "MBA in Marketing, Marketing Consultant",
+      "responsibilities": "Developing course materials, conducting webinars, providing case studies"
+    },
+    "what_you_learn": [
+      "Market research techniques",
+      "Segmentation and targeting strategies",
+      "Marketing mix: product, price, place, promotion",
+      "Digital marketing channels and tools",
+      "Analyzing marketing campaigns"
+    ],
+    "course_includes": "Video lectures, case studies, quizzes, live webinars",
+    "course_roadmap": "Week 1: Introduction to marketing concepts, Week 2-3: Market research and analysis, Week 4-5: Marketing strategies and tactics, Week 6: Final project",
+    "about_course": "This course is suitable for beginners and professionals seeking to enhance their marketing knowledge and skills.",
+    "course_content": "Introduction to marketing; Market research methods; Consumer behavior; Branding and positioning; Digital marketing strategies",
+    "faq": [
+      {
+        "question": "Is this course suitable for beginners?",
+        "answer": "Yes, this course covers marketing fundamentals suitable for beginners."
+      },
+      {
+        "question": "Will there be live sessions with the instructor?",
+        "answer": "Yes, there will be live webinars and Q&A sessions with the instructor."
+      },
+      {
+        "question": "Can I access the course materials after the course ends?",
+        "answer": "Yes, you will have lifetime access to the course materials."
+      }
+    ],
+    "course_access_time": "Lifetime access"
+  },
+  {
+    "category": "Business & Entrepreneurship",
+    "title": "Entrepreneurship Essentials",
+    "img": "https://img.freepik.com/premium-photo/electric-light-bulb-head-blackboard-with-diagram-with-decisions-question-marks-make-decisions-ge_906405-1382.jpg?size=626&ext=jpg&ga=GA1.1.957612158.1688363626&semt=ais_ai_generated",
+    "description": "Learn the key principles of entrepreneurship and startup management. This course covers ideation, business models, and funding.",
+    "total_lesson": 15,
+    "total_enrolled_students": 370,
+    "status": "trending",
+    "pricing": "Paid",
+    "amount": 89.99,
+    "starting_date": "2024-04-22",
+    "rating": 4.5,
+    "duration": "8 weeks",
+    "time_per_week": 6,
+    "discount": null,
+    "instructor": {
+      "name": "Sarah Johnson",
+      "img": "https://img.freepik.com/free-photo/smiling-young-man-with-crossed-arms-outdoors_1140-255.jpg?size=626&ext=jpg&ga=GA1.1.1109476174.1700924986&semt=sph",
+      "qualifications": "Entrepreneur, Startup Advisor",
+      "responsibilities": "Developing course curriculum, providing mentorship, organizing networking events"
+    },
+    "what_you_learn": [
+      "Identifying entrepreneurial opportunities",
+      "Creating business plans and models",
+      "Understanding funding options and investor pitches",
+      "Marketing and sales strategies for startups",
+      "Managing risks and scaling businesses"
+    ],
+    "course_includes": "Video lectures, case studies, group discussions, guest speaker sessions",
+    "course_roadmap": "Week 1: Introduction to entrepreneurship, Week 2-3: Opportunity recognition and validation, Week 4-5: Business planning and models, Week 6-7: Funding and financial management, Week 8: Scaling and growth strategies",
+    "about_course": "This course is designed for aspiring entrepreneurs and startup founders looking to build successful ventures.",
+    "course_content": "Introduction to entrepreneurship; Opportunity assessment; Lean startup methodology; Financial planning; Pitching to investors",
+    "faq": [
+      {
+        "question": "Do I need to have a business idea to enroll in this course?",
+        "answer": "No, this course will guide you through the ideation process if you don't have a business idea yet."
+      },
+      {
+        "question": "Will there be opportunities to network with other entrepreneurs?",
+        "answer": "Yes, there will be networking events and group discussions with fellow participants."
+      },
+      {
+        "question": "Can I get feedback on my business plan?",
+        "answer": "Yes, there will be opportunities for feedback and mentorship throughout the course."
+      }
+    ],
+    "course_access_time": "Lifetime access"
+  },
+  {
+    "category": "Health & Fitness",
+    "title": "Yoga Basics",
+    "img": "https://img.freepik.com/free-photo/person-practicing-yoga-meditation-nature-sunset-sunrise_23-2150838491.jpg?size=626&ext=jpg&ga=GA1.1.957612158.1688363626&semt=ais_ai_generated",
+    "description": "Discover the foundations of yoga practice. This course covers basic poses, breathing techniques, and relaxation methods.",
+    "total_lesson": 6,
+    "total_enrolled_students": 500,
+    "status": "regular",
+
+    "pricing": "Free",
+    "starting_date": "2024-03-10",
+    "rating": 4.8,
+    "duration": "4 weeks",
+    "time_per_week": 3,
+    "discount": null,
+    "instructor": {
+      "name": "Emily Roberts",
+      "img": "https://img.freepik.com/free-photo/bohemian-man-with-his-arms-crossed_1368-3542.jpg?size=626&ext=jpg&ga=GA1.1.1109476174.1700924986&semt=sph",
+      "qualifications": "Certified Yoga Instructor",
+      "responsibilities": "Designing lesson plans, guiding students through practice, providing individual feedback"
+    },
+    "what_you_learn": [
+      "Basic yoga poses (asanas) and their benefits",
+      "Breathing techniques (pranayama) for relaxation and energy",
+      "Introduction to meditation and mindfulness",
+      "Yoga philosophy and its application to daily life",
+      "Tips for establishing a consistent yoga practice"
+    ],
+    "course_includes": "Video tutorials, guided yoga sessions, meditation exercises, discussion forums"
+  },
+  {
+    "category": "Health & Fitness",
+    "title": "Cardio Workout",
+    "img": "https://img.freepik.com/free-photo/young-athletic-woman-having-cross-training-stationary-bike-gym_637285-2524.jpg?size=626&ext=jpg&ga=GA1.1.957612158.1688363626&semt=ais",
+    "description": "Get your heart pumping with high-intensity cardio exercises. This course focuses on improving cardiovascular health and stamina.",
+    "total_lesson": 12,
+    "total_enrolled_students": 500,
+    "status": "trending",
+
+    "pricing": "Paid",
+    "amount": 29.99,
+    "starting_date": "2024-03-15",
+    "rating": 4.5,
+    "duration": "6 weeks",
+    "time_per_week": 4,
+    "discount": 10,
+    "instructor": {
+      "name": "Alex Johnson",
+      "img": "https://img.freepik.com/free-photo/cheerful-indian-businessman-smiling-closeup-portrait-jobs-career-campaign_53876-129417.jpg?size=626&ext=jpg&ga=GA1.1.1109476174.1700924986&semt=sph",
+      "qualifications": "Certified Fitness Trainer",
+      "responsibilities": "Designing workout routines, monitoring progress, providing motivational support"
+    },
+    "what_you_learn": [
+      "Various cardio exercises such as running, jumping jacks, and burpees",
+      "Interval training techniques to boost metabolism",
+      "Monitoring heart rate and exertion levels",
+      "Effective warm-up and cool-down routines",
+      "Nutritional tips for maximizing workout results"
+    ],
+    "course_includes": "Video demonstrations, personalized workout plans, progress tracking tools, dietary guidelines"
+  }
+]
