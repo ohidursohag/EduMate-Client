@@ -67,7 +67,7 @@ const BlogCard = () => {
 };
 
 BlogCard.propTypes = {
-  param: PropTypes,
+  // param: PropTypes,
 };
 
 export default BlogCard;

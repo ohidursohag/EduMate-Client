@@ -1,5 +1,6 @@
 import { Jost, Poppins } from "next/font/google";
 import "./globals.css";
+import '@smastrom/react-rating/style.css'
 const jost = Jost({
   // weight: ["400", "700", "800", "500", "600"],
   subsets: ["latin"],

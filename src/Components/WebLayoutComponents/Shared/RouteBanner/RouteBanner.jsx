@@ -6,11 +6,9 @@ const RouteBanner = ({ title }) => {
   return (
     <div
       style={{ backgroundImage:`url('${BannerBG}')`}}
-      className=" relative  h-[200px] md:h-[300px] 2xl:h-[400px] flex justify-center items-center">
-      
+      className=" relative  h-[200px] md:h-[300px] 2xl:h-[400px] flex justify-center items-center">     
       <Path/>
-      <h2 className="text-4xl md:text-6xl font-bold text-gray-300">{title}</h2>
-      
+      <h2 className="text-4xl md:text-6xl font-bold text-gray-300">{title}</h2>     
       <Image src={BannerBG} alt="bg" fill className="relative -z-10 object-cover object-center"/>
       <div className="absolute w-full h-full -z-10 bg-gradient-to-b from-primary/85  to-secondary/70"/>
       {/* animated Wave bg */}

@@ -5,14 +5,13 @@ import FAQ from "@/Components/WebLayoutComponents/Home/FAQ/FAQ";
 import FreeCourses from "@/Components/WebLayoutComponents/Home/FreeCourses/FreeCourses";
 import PopularCourses from "@/Components/WebLayoutComponents/Home/PopularCourses/PopularCourses";
 
-
 const Homepage = () => {
   return (
     <div>
       <Banner></Banner>
       <PopularCourses/>
-      <FreeCourses/>
-      <FAQ/>
+      <FreeCourses />
+      <FAQ />
       <Blog />
     </div>
   );
