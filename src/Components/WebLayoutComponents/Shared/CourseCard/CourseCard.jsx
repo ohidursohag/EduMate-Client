@@ -8,7 +8,7 @@ import { LuBook } from "react-icons/lu";
 import { FaBookmark, FaStar, FaUser } from "react-icons/fa6";
 import DetailsButton from "../Cards/DetailsButton";
 import Rating from "react-rating";
-
+import { IoMdStarOutline } from "react-icons/io";
 const CoursesCard = ({ courseData, isflex, setFlex }) => {
   const {
     name,
@@ -41,8 +41,8 @@ const CoursesCard = ({ courseData, isflex, setFlex }) => {
             <span className="flex items-center mr-2 text-[#ff9747] ">
               <Rating
                 initialRating={rating}
-                emptySymbol={<FaStar />}
-                fullSymbol={<FaStar />}
+                emptySymbol={<IoMdStarOutline className="text-xl" />}
+                fullSymbol={<FaStar className="text-xl" />}
               />
             </span>
             <span className="text-sm">{rating} Reviews</span>
