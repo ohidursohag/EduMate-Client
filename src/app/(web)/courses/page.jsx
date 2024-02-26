@@ -8,8 +8,9 @@ import CourseFilter from "./CourseFilter/CourseFilter";
 import { GrFormPrevious, GrFormNext } from "react-icons/gr";
 import style from "./course.module.css";
 import { useEffect, useState } from "react";
+import getCourseData from "../../../../public/courseData.json";
 const CoursesPage = () => {
-  const [getCourseData, setCourseData] = useState([]);
+  // const [getCourseData, setCourseData] = useState([]);
   const [currentPage, setCurrentPage] = useState(0);
   const [itemPerPage, setItemPerPage] = useState(9);
   const [isflex, setFlex] = useState(false);
@@ -47,20 +48,22 @@ const CoursesPage = () => {
 
   // ============fetching categories data============
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await axiosPublic.get("/categories");
-        setCourseData(response.data);
-      } catch (error) {
-        console.log(error);
-      }
-    };
-    fetchData();
-  }, [axiosPublic]);
+  // this code for server side
+
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     try {
+  //       const response = await axiosPublic.get("/categories");
+  //       setCourseData(response.data);
+  //     } catch (error) {
+  //       console.log(error);
+  //     }
+  //   };
+  //   fetchData();
+  // }, [axiosPublic]);
 
   // =============state checkign is all category selected or not then filter based on categories==================
-  const filterCourse = getCourseData.flatMap((category) => {
+  const filterCourse = getCourseData?.categories.flatMap((category) => {
     if (Object.values(categoriesSelected).every((value) => !value)) {
       return category.courses;
     } else {
@@ -84,7 +87,7 @@ const CoursesPage = () => {
   //   (programming) => programming.name == "Web Development"
   // );
 
-  const latestFreeCourses = getCourseData
+  const latestFreeCourses = getCourseData?.categories
     ?.flatMap((category) => category?.courses)
     .filter((course) => course?.pricing == "Free");
 
