@@ -21,10 +21,10 @@ const CourseFilter = ({ categoryFilter, setcategoryFilter, filterCourse }) => {
       {categoryFilter ? (
         <button
           onClick={() => setcategoryFilter(!categoryFilter)}
-          className={`flex  z-10 md:hidden items-center gap-3  `}
+          className={`flex  z-20 md:hidden items-center gap-3  `}
         >
           {" "}
-          <MdOutlineCancel className="text-3xl text-red-400" />
+          <MdOutlineCancel className="text-3xl  text-red-400" />
         </button>
       ) : (
         <button

@@ -5,10 +5,13 @@ import CourseCard from "@/Components/WebLayoutComponents/Shared/CourseCard/Cours
 import CourseCategories from "./courseCategories/CourseCategories";
 import LatestCourseDemo from "./latestFreeCourseDemo/LatestCourseDemo";
 import CourseFilter from "./CourseFilter/CourseFilter";
+import { GrFormPrevious, GrFormNext } from "react-icons/gr";
+import style from "./course.module.css";
 import { useEffect, useState } from "react";
 const CoursesPage = () => {
   const [getCourseData, setCourseData] = useState([]);
-
+  const [currentPage, setCurrentPage] = useState(0);
+  const [itemPerPage, setItemPerPage] = useState(9);
   const [isflex, setFlex] = useState(false);
   const [categoryFilter, setcategoryFilter] = useState(false);
 
@@ -85,6 +88,30 @@ const CoursesPage = () => {
     ?.flatMap((category) => category?.courses)
     .filter((course) => course?.pricing == "Free");
 
+  // pagination inforamiton
+
+  const totalProducts = filterCourse.length;
+
+  const totalPage = Math.ceil(totalProducts / itemPerPage);
+  console.log(typeof totalPage);
+  const pages = [...Array(totalPage).keys()];
+  console.log(pages);
+  const handlePerPageProductNmuber = (e) => {
+    setItemPerPage(Number(e.target.value));
+    setCurrentPage(0);
+  };
+
+  const handlePrev = () => {
+    if (currentPage > 0) {
+      setCurrentPage((prevPage) => prevPage - 1);
+    }
+  };
+  const handleNext = () => {
+    if (currentPage < pages.length) {
+      setCurrentPage((prevPage) => prevPage + 1);
+    }
+  };
+
   return (
     <Container>
       <div className="relative">
@@ -154,8 +181,50 @@ const CoursesPage = () => {
           </div>
         </div>
 
-        <div className="pagination">
-          <button></button>
+        {/* ==========pagination====================== */}
+
+        <div className="pagination flex items-center justify-center md:justify-start pt-7">
+          <button onClick={handlePrev} className="  rounded-lg mr-3 text-white">
+            <GrFormPrevious className="text-3xl text-black" />
+          </button>
+
+          {pages.map((btn, index) => {
+            return (
+              <button
+                onClick={() => setCurrentPage(index)}
+                className={`md:px-8 py-2 md:bg-[#4A2AA8] rounded-lg mr-3 text-black md:text-white ${
+                  currentPage === index
+                    ? "text-orange-500 md:bg-[#FF8C00] md:text-white"
+                    : ""
+                }`}
+                key={index}
+              >
+                {" "}
+                {index}{" "}
+              </button>
+            );
+          })}
+
+          <select
+            onChange={handlePerPageProductNmuber}
+            value={itemPerPage}
+            name=""
+            id=""
+          >
+            <option value="3">3</option>
+            <option value="6">6</option>
+            <option value="10">10</option>
+            <option value="20">20</option>
+            <option value="9">9</option>
+            <option value="5">5</option>
+          </select>
+
+          <button
+            onClick={handleNext}
+            className=" py-2  rounded-lg mr-3 text-white"
+          >
+            <GrFormNext className="text-3xl text-black" />
+          </button>
         </div>
       </div>
     </Container>

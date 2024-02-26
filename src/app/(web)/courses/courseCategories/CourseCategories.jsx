@@ -10,7 +10,9 @@ const CourseCategories = ({
   return (
     <>
       <div
-        className={`${smallDevice ? `absolute -right-1   pr-0 top-10 ` : " "}`}
+        className={`${
+          smallDevice ? `absolute -right-1   pr-0 top-10 ` : " "
+        } z-10`}
       >
         <div
           className={`  top-2 md:relative  rounded-[12px] md:rounded-0  bg-[#FFFFFF]  space-y-6  border-[#eee] border-2 p-4 `}
