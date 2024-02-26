@@ -3,6 +3,7 @@ import { CiHeart } from "react-icons/ci";
 import { FiBook } from "react-icons/fi";
 import { MdOutlineMonitor } from "react-icons/md";
 import { FaArrowRightLong } from "react-icons/fa6";
+import SectionTitle from "../SectionTitle/SectionTitle";
 
 const KnowAboutUs = () => {
   return (
@@ -33,10 +34,10 @@ const KnowAboutUs = () => {
         />
       </div>
       <div className="text-left lg:w-1/3 ">
-        <p className="bg-green-200  text-green-800 px-7 py-2 rounded-full w-fit">
-          Know About Us
-        </p>
-        <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold mt-6">
+        <div className="w-fit ">
+          <SectionTitle text="Know About Us"></SectionTitle>
+        </div>
+        <h1 className="text-2xl md:text-4xl lg:text-5xl font-semibold mt-6">
           Know About EduMate <br /> Learning Platform.
         </h1>
         <p className="mt-6 ">

@@ -1,0 +1,72 @@
+[
+  {
+    "image": "https://i.ibb.co/LSXCbgy/Screenshot-1.png",
+    "name": "John Doe",
+    "ratings": 4.9,
+    "designation": "Product Tester",
+    "description": "John Doe is an experienced product tester who was thoroughly impressed by the durability and functionality of the product. Highly recommended!"
+  },
+  {
+    "image": "https://i.ibb.co/L12kHfX/Screenshot-2.png",
+    "name": "Jane Smith",
+    "ratings": 4.2,
+    "designation": "Tech Enthusiast",
+    "description": "Jane Smith, a tech enthusiast, found the product to be incredibly user-friendly and efficient. It exceeded her expectations!"
+  },
+  {
+    "image": "https://i.ibb.co/KLzzDw2/Screenshot-3.png",
+    "name": "Samy Brown",
+    "ratings": 4,
+    "designation": "Fitness Coach",
+    "description": "As a fitness coach, Sam Brown relies on quality equipment. The product not only met but surpassed his standards, making it a must-have."
+  },
+  {
+    "image": "https://i.ibb.co/mT415PR/Screenshot-4.png",
+    "name": "Emily Johnson",
+    "ratings": 4.5,
+    "designation": "Home Chef",
+    "description": "Emily Johnson, a passionate home chef, found the product to be a game-changer in her kitchen. It's a perfect blend of style and functionality."
+  },
+  {
+    "image": "https://i.ibb.co/pxWwGk6/Screenshot-5.png",
+    "name": "Sara Garcia",
+    "ratings": 4.8,
+    "designation": "Outdoor Adventurer",
+    "description": "David Lee, an outdoor adventurer, tested the product in rugged conditions and it held up exceptionally well. It's a must-have for any outdoor enthusiast."
+  },
+  {
+    "image": "https://i.ibb.co/jgXJX9w/Screenshot-6.png",
+    "name": "David Lee",
+    "ratings": 5,
+    "designation": "Fashion Blogger",
+    "description": "Sara Garcia, a fashion blogger, loved how the product effortlessly complemented her style. It's a versatile accessory that adds a touch of elegance."
+  },
+  {
+    "image": "https://i.ibb.co/nCXhb84/Screenshot-7.png",
+    "name": "Michael Clark",
+    "ratings": 4.4,
+    "designation": "Gamer",
+    "description": "Michael Clark, a hardcore gamer, found the product's performance to be exceptional during intense gaming sessions. It's a gamer's dream come true."
+  },
+  {
+    "image": "https://i.ibb.co/W0n1Zxt/Screenshot-8.png",
+    "name": "Chris Roberts",
+    "ratings": 5,
+    "designation": "Interior Designer",
+    "description": "Sophia Taylor, an interior designer, incorporated the product seamlessly into her designs. It's a stylish addition that enhances any space."
+  },
+  {
+    "image": "https://i.ibb.co/JdvCfww/Screenshot-9.png",
+    "name": "Sophia Taylor",
+    "ratings": 4.9,
+    "designation": "Musician",
+    "description": "Chris Roberts, a musician, was impressed by the product's sound quality and performance. It's a must-have for any music lover."
+  },
+  {
+    "image": "https://i.ibb.co/pxWwGk6/Screenshot-5.png",
+    "name": "Linda Nguyen",
+    "ratings": 4.3,
+    "designation": "Busy Mom",
+    "description": "Linda Nguyen, a busy mom, found the product to be a lifesaver in managing her daily tasks. It's practical, efficient, and indispensable."
+  }
+]

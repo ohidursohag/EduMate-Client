@@ -2,10 +2,9 @@ import Container from "@/Components/Utils/Container";
 import Section from "@/Components/Utils/Section";
 import SectionTitle from "@/Components/Utils/SectionTitle/SectionTitle";
 
-import CoursesCard from "../../Shared/Cards/CoursesCard";
-import CourseCategoryCard from "../../Shared/Cards/CourseCategoryCard";
 import SeeMoreButton from "@/Components/Utils/Buttons/SeeMoreButton";
 import { promises as fs } from "fs";
+import CoursesCard from "../../Shared/Cards/CoursesCard";
 const PopularCourses = async () => {
   const file = await fs.readFile(
     process.cwd() + "/public/allCourses.json",
@@ -13,7 +12,7 @@ const PopularCourses = async () => {
   );
   const data = JSON.parse(file);
 
-  const popular_Courses = data.filter((course) => course.status === "popular" && course.pricing ==='paid');
+  const popular_Courses = data.filter((course) => course.status === "popular" && course.status !== "upcoming" && course.pricing ==='paid');
   // console.log(popular_Courses)
   return (
     <Section>
@@ -30,7 +29,7 @@ const PopularCourses = async () => {
         />
         {/* Blog Card */}
         <div className="grid grid-cols-1 lg:grid-cols-3 xl:grid-cols-2 3xl:grid-cols- gap-5  ">
-          {popular_Courses.slice(0, 4).map((course, idx) => (
+          {popular_Courses.slice(0, 6).map((course, idx) => (
             <CoursesCard key={idx} course={course} />
           ))}
         </div>

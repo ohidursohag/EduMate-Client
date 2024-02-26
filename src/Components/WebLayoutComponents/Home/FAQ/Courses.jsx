@@ -13,7 +13,7 @@ const Courses = () => {
       <>
          <section className="py-5">
             <div className="container mx-auto px-4">
-               {faqTitle.map((question, index) => <FAQCard key={index} question={question}/>)}
+               {faqTitle.map((question, index) => <FAQCard key={index} question={question} />)}
             </div>
          </section>
       </>
