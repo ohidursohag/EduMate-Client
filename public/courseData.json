@@ -188,7 +188,7 @@
     },
     {
       "name": "Graphic Design",
-      "keyWardName": "graphicsDesign",
+      "keyWardName": "graphicDesign",
       "courses": [
         {
           "title": "Adobe Photoshop Mastery",
@@ -281,6 +281,7 @@
     },
     {
       "name": "Language Learning",
+      "keyWardName": "languageLearning",
       "courses": [
         {
           "title": "Spanish for Beginners",
@@ -387,7 +388,7 @@
           "discount": null,
           "instructor": {
             "name": "Anna Wilson",
-            "img": "anna_wilson.jpg",
+            "img": "https://img.freepik.com/free-photo/html-system-websites-concept_23-2150323500.jpg?size=626&ext=jpg&ga=GA1.1.957612158.1688363626&semt=ais",
             "qualifications": "Web Development Specialist",
             "responsibilities": "Creating course materials, leading live coding sessions, providing technical support"
           },
@@ -431,7 +432,8 @@
           "discount": 10,
           "instructor": {
             "name": "Daniel Clark",
-            "img": "daniel_clark.jpg",
+            "img": "https://img.freepik.com/free-photo/html-system-websites-concept_23-2150323500.jpg?size=626&ext=jpg&ga=GA1.1.957612158.1688363626&semt=ais",
+
             "qualifications": "Full-stack Developer, JavaScript Expert",
             "responsibilities": "Developing course materials, conducting live coding sessions, providing code reviews"
           },
@@ -652,6 +654,7 @@
     },
     {
       "name": "Health & Fitness",
+      "keyWardName": "health",
       "courses": [
         {
           "title": "Yoga Basics",
