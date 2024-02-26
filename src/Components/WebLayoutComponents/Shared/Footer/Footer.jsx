@@ -14,7 +14,7 @@ const Footer = () => {
   return (
     <div>
       <svg
-        className=""
+        className="relative top-0.5"
         style={{ transform: "scaleY(-1)" }}
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1000 100"
@@ -143,9 +143,9 @@ const Footer = () => {
                         <input
                           type="text"
                           placeholder="Emaill address"
-                          className="px-7 py-3 rounded-xl text-black border-0 "
+                          className="px-2 w-2/3 md:w-full md:px-7 py-1 md:py-3 rounded-xl text-black border-0 "
                         />
-                        <button className="px-4 py-3 bg-[#008080] rounded-md absolute right-0">
+                        <button className="px-3 py-1  md:py-3 bg-[#250D87] rounded-md absolute right-16  md:right-0">
                           Subscribe
                         </button>
                       </label>

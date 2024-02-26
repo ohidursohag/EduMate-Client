@@ -1,10 +1,12 @@
 import React from "react";
-import LatestCourseDemo from "../latestCourseDemo/LatestCourseDemo";
+import LatestCourseDemo from "../latestFreeCourseDemo/LatestCourseDemo";
 
 const CourseCategories = ({
   handleChangeCategories,
   smallDevice,
   categoryFilter,
+  categoriesSelected,
+  resetCheckedBox,
 }) => {
   return (
     <>
@@ -30,6 +32,7 @@ const CourseCategories = ({
                   style={{
                     boxShadow: "none",
                   }}
+                  checked={categoriesSelected?.development}
                   onChange={() => handleChangeCategories("development")}
                   type="checkbox"
                   class="appearance-none    rounded-[2px]  outline-none  checked:bg-blue-500 "
@@ -39,6 +42,7 @@ const CourseCategories = ({
 
               <label className="flex gap-3 items-center">
                 <input
+                  checked={categoriesSelected?.programming}
                   style={{
                     boxShadow: "none",
                   }}
@@ -51,6 +55,7 @@ const CourseCategories = ({
 
               <label className="flex gap-3 items-center">
                 <input
+                  checked={categoriesSelected?.dataScience}
                   style={{
                     boxShadow: "none",
                   }}
@@ -63,6 +68,7 @@ const CourseCategories = ({
 
               <label className="flex gap-3 items-center">
                 <input
+                  checked={categoriesSelected?.digitalMarketing}
                   style={{
                     boxShadow: "none",
                   }}
@@ -75,6 +81,7 @@ const CourseCategories = ({
 
               <label className="flex gap-3 items-center">
                 <input
+                  checked={categoriesSelected?.videoGraphy}
                   style={{
                     boxShadow: "none",
                   }}
@@ -86,9 +93,11 @@ const CourseCategories = ({
               </label>
               <label className="flex gap-3 items-center">
                 <input
+                  checked={categoriesSelected?.algorithom}
                   style={{
                     boxShadow: "none",
                   }}
+                  onChange={() => handleChangeCategories("algorithom")}
                   type="checkbox"
                   class="appearance-none  rounded-[2px] checked:bg-blue-500 ..."
                 />{" "}
@@ -96,6 +105,8 @@ const CourseCategories = ({
               </label>
               <label className="flex gap-3 items-center">
                 <input
+                  checked={categoriesSelected?.machineLearning}
+                  onChange={() => handleChangeCategories("machineLearning")}
                   style={{
                     boxShadow: "none",
                   }}
@@ -167,7 +178,10 @@ const CourseCategories = ({
             <button className="bg-[#ffb606] px-5 py-2 lg:px-8 lg:py-3  rounded-[5px] text-black font-medium  ">
               FILTER{" "}
             </button>
-            <button className="bg-[#ffb606] px-5  py-2 lg:py-3  rounded-[5px] text-black font-medium  ">
+            <button
+              onClick={() => resetCheckedBox()}
+              className="bg-[#ffb606] px-5  py-2 lg:py-3  rounded-[5px] text-black font-medium  "
+            >
               RESET{" "}
             </button>
           </div>

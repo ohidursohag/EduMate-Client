@@ -3,14 +3,16 @@ import useAxiosPublic from "@/Components/Hooks/useAxiosPublic";
 import Container from "@/Components/Utils/Container";
 import CourseCard from "@/Components/WebLayoutComponents/Shared/CourseCard/CourseCard";
 import CourseCategories from "./courseCategories/CourseCategories";
-import LatestCourseDemo from "./latestCourseDemo/LatestCourseDemo";
+import LatestCourseDemo from "./latestFreeCourseDemo/LatestCourseDemo";
 import CourseFilter from "./CourseFilter/CourseFilter";
 import { useEffect, useState } from "react";
 const CoursesPage = () => {
   const [getCourseData, setCourseData] = useState([]);
+
   const [isflex, setFlex] = useState(false);
   const [categoryFilter, setcategoryFilter] = useState(false);
-  const [categoriesSelected, setCategoriesSelected] = useState({
+
+  const InitialcategoriesState = {
     development: false,
     programming: false,
     dataScience: false,
@@ -18,7 +20,16 @@ const CoursesPage = () => {
     graphicsDesign: false,
     digitalMarketing: false,
     graphicsDesign: false,
-  });
+    algorithom: false,
+    machineLearning: false,
+  };
+  const [categoriesSelected, setCategoriesSelected] = useState(
+    InitialcategoriesState
+  );
+
+  const resetCheckedBox = () => {
+    setCategoriesSelected(InitialcategoriesState);
+  };
 
   // ====================categories  handlechanger================
 
@@ -47,7 +58,6 @@ const CoursesPage = () => {
 
   // =============state checkign is all category selected or not then filter based on categories==================
   const filterCourse = getCourseData.flatMap((category) => {
-    console.log(category);
     if (Object.values(categoriesSelected).every((value) => !value)) {
       return category.courses;
     } else {
@@ -78,11 +88,15 @@ const CoursesPage = () => {
   return (
     <Container>
       <div className="relative">
-        <div className="my-4 text-3xl font-bold"> Courses </div>
+        <div className="my-4 text-3xl md:text-4xl font-bold   text-[#250D87]">
+          {" "}
+          Courses{" "}
+        </div>
 
         <div className="grid grid-cols-12 bg-[#00000000] w-full">
           <div className="col-span-12 md:col-span-8 lg:col-span-9  px-2">
             <CourseFilter
+              filterCourse={filterCourse}
               categoryFilter={categoryFilter}
               setcategoryFilter={setcategoryFilter}
             ></CourseFilter>
@@ -110,10 +124,14 @@ const CoursesPage = () => {
             </div>
           </div>
 
-          {/* ============== right sidecategories section===================== */}
+          {/* ============== right side categories section===================== */}
 
           <div className=" hidden md:block md:col-span-4 lg:col-span-3 space-y-6 p-4">
-            <CourseCategories handleChangeCategories={handleChangeCategories} />
+            <CourseCategories
+              handleChangeCategories={handleChangeCategories}
+              categoriesSelected={categoriesSelected}
+              resetCheckedBox={resetCheckedBox}
+            />
             <h2 className="text-2xl relative font-medium mb-6 ">Latest </h2>
 
             <div className=" flex flex-col gap-4">
