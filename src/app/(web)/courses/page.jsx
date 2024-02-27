@@ -71,28 +71,12 @@ const CoursesPage = () => {
     }
   });
 
-  // const programmingCourse = getCourseData?.filter(
-  //   (programming) => programming.name === "Programming"
-  // );
-
-  // const graphicsDesign = getCourseData?.data.filter(
-  //   (programming) => programming.name == "Graphic Design"
-  // );
-
-  // const dataScience = getCourseData?.data.filter(
-  //   (programming) => programming.name == "Data Science"
-  // );
-
-  // const webDevelopment = getCourseData?.data.filter(
-  //   (programming) => programming.name == "Web Development"
-  // );
-
   const latestFreeCourses = getCourseData
     ?.flatMap((category) => category)
     .filter((course) => course?.pricing == "free")
     .slice(0, 5);
 
-  // pagination inforamiton
+  // =========pagination inforamiton===============
 
   const totalProducts = filterCourse.length;
 
