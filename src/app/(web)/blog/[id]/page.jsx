@@ -7,13 +7,14 @@ import { FaRegCalendarDays, FaStarOfLife } from "react-icons/fa6";
 import { LiaCommentSolid } from "react-icons/lia";
 import { FaSearch } from "react-icons/fa";
 import { GoDotFill } from "react-icons/go";
+import { promises as fs } from 'fs'
 
-const BlogDetails = ({ params }) => {
+const BlogDetails = async ({ params }) => {
    const { id } = params;
-   console.log(id)
-   const title = "Learn Webs Applications Development from Experts";
-   const description =
-      "Enhance your sales prowess with practical techniques focused on communication, negotiation, and customer relations. This course offers actionable insights for achieving greater success in sales.";
+   const file = await fs.readFile(process.cwd() + '/public/blogData.json', 'utf8');
+   const blogData = JSON.parse(file);
+   const blogMatch = blogData?.find(data => data?.id == id)
+
    return (
       <Container>
          <Section>
@@ -29,12 +30,12 @@ const BlogDetails = ({ params }) => {
                            <div className="flex flex-col md:flex-row items-start gap-2 md:gap-5">
                               <div className="flex items-center gap-3">
                                  <Image src={img1} alt="Blog Image" height="fill" width="fill" className="w-7 h-7 rounded-full" />
-                                 <p>Sohan Perves</p>
+                                 <p>{blogMatch?.author}</p>
                               </div>
-                              <p className="flex justify-center items-center gap-2"><span><FaRegCalendarDays className="text-xl" /></span>24 February, 2024</p>
-                              <p className="flex justify-center items-center gap-1"><span><LiaCommentSolid className="text-xl" /></span>No Comments</p>
+                              <p className="flex justify-center items-center gap-2"><span><FaRegCalendarDays className="text-xl" /></span>{blogMatch?.publish_date}</p>
+                              <p className="flex justify-center items-center gap-1"><span><LiaCommentSolid className="text-xl" /></span>{blogMatch?.comments}</p>
                            </div>
-                           <h1 className="text-xl md:text-2xl font-bold my-5 text-title">{title}</h1>
+                           <h1 className="text-xl md:text-2xl font-bold my-5 text-title">{blogMatch?.title}</h1>
                            <p className=" mb-5 text-description">
                               When working on a new piece of software, it’s essential to craft a software design document to create a clear and precise vision of the client’s problem and your proposed solution. Software design documents are important for detailing expectations between the software engineer and the client. They help to streamline the coding process before any code is written.
                               <br /><br />
@@ -69,7 +70,6 @@ const BlogDetails = ({ params }) => {
                            <div className="space-y-3">
                               <div>
                                  <label htmlFor="comment" className="flex gap-1">Your Comment <FaStarOfLife className="text-red-600 text-[8px]" /></label>
-                                 {/* <textarea class="bg-gray-100 rounded border border-gray-400 leading-normal resize-none w-full h-20 py-2 px-3 font-medium placeholder-gray-700 focus:outline-none focus:bg-white" name="body" placeholder='Type Your Comment' required></textarea> */}
                                  <textarea rows={5} cols={5} type="text" name="" id="comment" className="w-full   rounded-md border border-description focus:outline-none" />
                               </div>
                               <div>
@@ -102,58 +102,31 @@ const BlogDetails = ({ params }) => {
                   {/* Recent Blog Section */}
                   <div className="p-5 bg-white rounded-md mt-5 space-y-3 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]">
                      <h5 className="text-2xl font-bold mb-5">Recent Posts</h5>
-                     {/* 1st */}
-                     <Link href="#" className="flex items-center gap-3 shadow hover:shadow-[0_2px_5px_rgb(0,0,0,0.2)] rounded">
-                        <Image src={img1} alt="Blog Image" height="fill" width="fill" className="w-20 h-14 rounded-t group-hover:scale-105 transition duration-500" />
-                        <div className="space-y-1">
-                           <h3 className="text-sm md:text-[15px] xl:text-base font-medium leading-5">Expand Your Career Opportunities…</h3>
-                           <p className="text-[13px]">January 18, 2023</p>
-                        </div>
-                     </Link>
-                     {/* 2nd */}
-                     <Link href="#" className="flex items-center gap-3 shadow hover:shadow-[0_2px_5px_rgb(0,0,0,0.2)] rounded">
-                        <Image src={img1} alt="Blog Image" height="fill" width="fill" className="w-20 h-14 rounded-t group-hover:scale-105 transition duration-500" />
-                        <div className="space-y-1">
-                           <h3 className="text-sm md:text-[15px] xl:text-base font-medium leading-5">Expand Your Career Opportunities…</h3>
-                           <p className="text-[13px]">January 18, 2023</p>
-                        </div>
-                     </Link>
-                     {/* 3rd */}
-                     <Link href="#" className="flex items-center gap-3 shadow hover:shadow-[0_2px_5px_rgb(0,0,0,0.2)] rounded">
-                        <Image src={img1} alt="Blog Image" height="fill" width="fill" className="w-20 h-14 rounded-t group-hover:scale-105 transition duration-500" />
-                        <div className="space-y-1">
-                           <h3 className="text-sm md:text-[15px] xl:text-base font-medium leading-5">Expand Your Career Opportunities…</h3>
-                           <p className="text-[13px]">January 18, 2023</p>
-                        </div>
-                     </Link>
-                     {/* 4th */}
-                     <Link href="#" className="flex items-center gap-3 shadow hover:shadow-[0_2px_5px_rgb(0,0,0,0.2)] rounded">
-                        <Image src={img1} alt="Blog Image" height="fill" width="fill" className="w-20 h-14 rounded-t group-hover:scale-105 transition duration-500" />
-                        <div className="space-y-1">
-                           <h3 className="text-sm md:text-[15px] xl:text-base font-medium leading-5">Expand Your Career Opportunities…</h3>
-                           <p className="text-[13px]">January 18, 2023</p>
-                        </div>
-                     </Link>
-                     {/* 5th */}
-                     <Link href="#" className="flex items-center gap-3 shadow hover:shadow-[0_2px_5px_rgb(0,0,0,0.2)] rounded">
-                        <Image src={img1} alt="Blog Image" height="fill" width="fill" className="w-20 h-14 rounded-t group-hover:scale-105 transition duration-500" />
-                        <div className="space-y-1">
-                           <h3 className="text-sm md:text-[15px] xl:text-base font-medium leading-5">Expand Your Career Opportunities…</h3>
-                           <p className="text-[13px]">January 18, 2023</p>
-                        </div>
-                     </Link>
+                     {/* Blog Card */}
+                     {
+                        blogData?.slice(0, 5)?.map((post, index) =>
+                           <Link key={index} href={`/blog/${post?.id}`} className="flex items-center gap-3 shadow hover:shadow-[0_2px_5px_rgb(0,0,0,0.2)] rounded">
+                              <div className="w-20 h-20">
+                                 <Image src={post?.img} alt="Blog Image" height="80" width="80" className="w-20 h-20 object-cover rounded-t group-hover:scale-105 transition duration-500" />
+                              </div>
+                              <div className="space-y-1">
+                                 <h3 className="text-sm md:text-[15px] xl:text-base font-medium leading-5">{post.title?.slice(0, 40)}...</h3>
+                                 <p className="text-[13px]">{post?.publish_date}</p>
+                              </div>
+                           </Link>)
+                     }
                   </div>
                   {/* Blog Categories Section */}
                   <div className="p-5 bg-white rounded-md mt-5 space-y-3 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]">
                      <h5 className="text-2xl font-bold mb-5">Categories</h5>
                      <div>
                         <ul className="space-y-2">
-                           <Link href="#" className="flex items-center gap-2 text-base hover:text-primary hover:bg-white rounded-md max-w-max hover:pr-4"><GoDotFill className="text-primary" /> Development</Link>
-                           <Link href="#" className="flex items-center gap-2 text-base hover:text-primary hover:bg-white rounded-md max-w-max hover:pr-4"><GoDotFill className="text-primary" /> Business</Link>
-                           <Link href="#" className="flex items-center gap-2 text-base hover:text-primary hover:bg-white rounded-md max-w-max hover:pr-4"><GoDotFill className="text-primary" /> Courses</Link>
-                           <Link href="#" className="flex items-center gap-2 text-base hover:text-primary hover:bg-white rounded-md max-w-max hover:pr-4"><GoDotFill className="text-primary" /> Education</Link>
-                           <Link href="#" className="flex items-center gap-2 text-base hover:text-primary hover:bg-white rounded-md max-w-max hover:pr-4"><GoDotFill className="text-primary" /> Graphics Design</Link>
-                           <Link href="#" className="flex items-center gap-2 text-base hover:text-primary hover:bg-white rounded-md max-w-max hover:pr-4"><GoDotFill className="text-primary" /> Digital Marketing</Link>
+                           {/* blog Category Card */}
+                           {
+                              blogData?.slice(0, 8).map(data => (
+                                 <Link key={data?.id} href="#" className="flex items-center gap-2 text-base hover:text-primary hover:bg-white rounded-md max-w-max hover:pr-4"><GoDotFill className="text-primary" /> {data?.category}</Link>
+                              ))
+                           }
                         </ul>
                      </div>
                   </div>
