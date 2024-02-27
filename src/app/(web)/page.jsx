@@ -11,8 +11,8 @@ const Homepage = () => {
   return (
     <div>
       <Banner></Banner>
-      <PopularCourses/>
-      <UpComingCourses/>
+      <PopularCourses />
+      <UpComingCourses />
       <FreeCourses />
       <Review />
       <Blog />

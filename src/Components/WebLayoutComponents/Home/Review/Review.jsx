@@ -8,39 +8,39 @@ const Review = async () => {
    const file = await fs.readFile(
       process.cwd() + "/public/review.json",
       "utf8"
-    );
-    const reviews = JSON.parse(file);
+   );
+   const reviews = JSON.parse(file);
    //  console.log(reviews)
 
-  return (
-    <Section>
-      <SectionTitle sectionName={'Reviews'} title={'What Our Students Says'}/>
-      <Marquee  gradient direction="right" >
-          {reviews.map((data) => (
-            <div key={data.name}>
-              <ReviewCard
-                name={data.name}
-                image={data.image}
-                ratings={data.ratings}
-                designation={data.designation}
-                description={data.description}/>
-            </div>
-          ))}
-        </Marquee>
-      <Marquee  gradient direction="left" >
-          {reviews.map((data) => (
-            <div key={data.name}>
-              <ReviewCard
-                name={data.name}
-                image={data.image}
-                ratings={data.ratings}
-                designation={data.designation}
-                description={data.description}/>
-            </div>
-          ))}
-        </Marquee>
-    </Section>
-  );
+   return (
+      <Section>
+         <SectionTitle sectionName={'Reviews'} title={'What Our Students Says'} />
+         <Marquee gradient direction="right" >
+            {reviews.map((data) => (
+               <div key={data.name}>
+                  <ReviewCard
+                     name={data.name}
+                     image={data.image}
+                     ratings={data.ratings}
+                     designation={data.designation}
+                     description={data.description} />
+               </div>
+            ))}
+         </Marquee>
+         <Marquee gradient direction="left" >
+            {reviews.map((data) => (
+               <div key={data.name}>
+                  <ReviewCard
+                     name={data.name}
+                     image={data.image}
+                     ratings={data.ratings}
+                     designation={data.designation}
+                     description={data.description} />
+               </div>
+            ))}
+         </Marquee>
+      </Section>
+   );
 };
 
 export default Review;
