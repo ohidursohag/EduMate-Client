@@ -8,12 +8,12 @@ import CourseFilter from "./CourseFilter/CourseFilter";
 import { GrFormPrevious, GrFormNext } from "react-icons/gr";
 import style from "./course.module.css";
 import { useEffect, useState } from "react";
-import getCourseData from "../../../../public/courseData.json";
+import getCourseData from "../../../../public/allCourses.json";
 const CoursesPage = () => {
   // const [getCourseData, setCourseData] = useState([]);
   const [currentPage, setCurrentPage] = useState(0);
   const [itemPerPage, setItemPerPage] = useState(9);
-  const [isflex, setFlex] = useState(false);
+  const [isGrid, setGrid] = useState(false);
   const [categoryFilter, setcategoryFilter] = useState(false);
 
   const InitialcategoriesState = {
@@ -63,11 +63,11 @@ const CoursesPage = () => {
   // }, [axiosPublic]);
 
   // =============state checkign is all category selected or not then filter based on categories==================
-  const filterCourse = getCourseData?.categories.flatMap((category) => {
+  const filterCourse = getCourseData?.flatMap((category) => {
     if (Object.values(categoriesSelected).every((value) => !value)) {
-      return category.courses;
+      return category;
     } else {
-      return categoriesSelected[category?.keyWardName] ? category.courses : [];
+      return categoriesSelected[category?.keyWardName] ? category : [];
     }
   });
 
@@ -87,18 +87,19 @@ const CoursesPage = () => {
   //   (programming) => programming.name == "Web Development"
   // );
 
-  const latestFreeCourses = getCourseData?.categories
-    ?.flatMap((category) => category?.courses)
-    .filter((course) => course?.pricing == "Free");
+  const latestFreeCourses = getCourseData
+    ?.flatMap((category) => category)
+    .filter((course) => course?.pricing == "free")
+    .slice(0, 5);
 
   // pagination inforamiton
 
   const totalProducts = filterCourse.length;
 
   const totalPage = Math.ceil(totalProducts / itemPerPage);
-  console.log(typeof totalPage);
+
   const pages = [...Array(totalPage).keys()];
-  console.log(pages);
+
   const handlePerPageProductNmuber = (e) => {
     setItemPerPage(Number(e.target.value));
     setCurrentPage(0);
@@ -126,6 +127,8 @@ const CoursesPage = () => {
         <div className="grid grid-cols-12 bg-[#00000000] w-full">
           <div className="col-span-12 md:col-span-8 lg:col-span-9  px-2">
             <CourseFilter
+              isGrid={isGrid}
+              setGrid={setGrid}
               filterCourse={filterCourse}
               categoryFilter={categoryFilter}
               setcategoryFilter={setcategoryFilter}
@@ -133,24 +136,18 @@ const CoursesPage = () => {
 
             {/* ============ left side Coursecard section========================= */}
 
-            <div className="grid gap-3 md:grid-cols-2 lg:grid-cols-3    ">
+            <div
+              className={`grid gap-3 md:grid-cols-1 ${
+                isGrid ? "lg:grid-cols-1" : "lg:grid-cols-2"
+              }`}
+            >
               {filterCourse?.slice(0, 6).map((course, index) => (
                 <CourseCard
-                  // isflex={flex}
-                  // setFlex={setFlex}
+                  isGrid={isGrid}
                   courseData={course}
                   key={index}
                 ></CourseCard>
               ))}
-
-              {/* 
-            {filterCourse?.map((course, index) =>
-                            course?.courses.map((course) => {
-                              return (
-                                <CourseCard courseData={course} key={index}></CourseCard>
-                              );
-                            })
-                          )} */}
             </div>
           </div>
 

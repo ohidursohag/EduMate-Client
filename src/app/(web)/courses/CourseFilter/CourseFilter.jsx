@@ -3,13 +3,27 @@ import { useState } from "react";
 import { FaFilter } from "react-icons/fa6";
 import { ImMenu } from "react-icons/im";
 import { MdOutlineCancel } from "react-icons/md";
+import { SiWindows11 } from "react-icons/si";
 
-const CourseFilter = ({ categoryFilter, setcategoryFilter, filterCourse }) => {
+const CourseFilter = ({
+  categoryFilter,
+  setcategoryFilter,
+  filterCourse,
+  isGrid,
+  setGrid,
+}) => {
   return (
     <div className="flex justify-between mb-9">
       <p className="flex items-center  gap-4  text-sm md:text-lg">
-        {" "}
-        <ImMenu className="text-2xl" /> showing {filterCourse?.length} result
+        <SiWindows11
+          onClick={() => setGrid(false)}
+          className={`text-xl ${isGrid ? "" : "text-[#250D87]"}`}
+        />
+        <ImMenu
+          onClick={() => setGrid(true)}
+          className={`text-2xl ${isGrid ? "text-[#250D87]" : ""}`}
+        />{" "}
+        showing {filterCourse?.length} result
       </p>
       <select class="hidden md:block py-3 px-4 pe-9   border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none ">
         <option selected>Independent</option>
