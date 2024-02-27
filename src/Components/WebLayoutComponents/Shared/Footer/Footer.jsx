@@ -1,7 +1,5 @@
-import Section from "@/Components/Utils/Section";
 import Image from "next/image";
 import Link from "next/link";
-import banner1 from "@/Assets/BannerImage/banner-without-bg.png";
 import { IoLocationOutline } from "react-icons/io5";
 import { BsTelephone } from "react-icons/bs";
 import { CgMail } from "react-icons/cg";
@@ -9,11 +7,22 @@ import { CiFacebook } from "react-icons/ci";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import Container from "@/Components/Utils/Container";
-import logo from "../../../../../public/logoIcon.png";
+import wave from "@/Assets/BannerImage/waveDown.svg";
+import footerBg from "@/Assets/BannerImage/Banner_bg.jpg";
+import logoIcon from "@/Assets/logo/logoIcon.png";
+import logoName from "@/Assets/logo/logoName.png";
+import {
+  FaFacebookF,
+  FaLinkedinIn,
+  FaSquareInstagram,
+  FaTwitter,
+  FaYoutube,
+} from "react-icons/fa6";
+
 const Footer = () => {
   return (
     <div>
-      <svg
+      {/* <svg
         className="relative top-0.5"
         style={{ transform: "scaleY(-1)" }}
         xmlns="http://www.w3.org/2000/svg"
@@ -26,22 +35,75 @@ const Footer = () => {
 	c23.6,2.1,48.7,3.5,103.4-2.5c54.7-6,106.2-25.6,106.2-25.6V0H0v30.3c0,0,72,32.6,158.4,30.5c39.2-0.7,92.8-6.7,134-22.4
 	c21.2-8.1,52.2-18.2,79.7-24.2C399.3,7.9,411.6,7.5,421.9,6.5z"
         ></path>
-      </svg>
-      <footer className="bg-[#000000] relative  ">
-        <Container>
+      </svg> */}
+      <footer className="relative ">
+        {/* animated Wave bg */}
+        <svg
+          className="absolute top-0 rotate-180"
+          width="100%"
+          height="400"
+          viewBox="0 0 1000 1000"
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+          overflow="auto"
+          shapeRendering="auto"
+          fill="#250d87">
+          <defs>
+            <path
+              id="wavepath"
+              d="M 0 2000 0 500 Q 150 381 300 500 t 300 0 300 0 300 0 300 0 300 0  v1000 z"
+            />
+            <path id="motionpath" d="M -600 0 0 0" />
+          </defs>
+          <g>
+            <use xlinkHref="#wavepath" y="353" fill="#ffffff">
+              <animateMotion dur="5s" repeatCount="indefinite">
+                <mpath xlinkHref="#motionpath" />
+              </animateMotion>
+            </use>
+          </g>
+        </svg>
+        {/* Wave image */}
+        {/* <div className="absolute top-0">
+          <Image src={wave} alt="wave svg" width={1920} height={100} />
+        </div> */}
+        {/* Bg image */}
+        <Image
+          src={footerBg}
+          alt="footer Bg"
+          fill
+          className="absolute object-cover object-center -z-20"
+        />
+        {/*  overlay */}
+        <div className="absolute w-full h-full -z-10 bg-gradient-to-t from-primary/95  to-secondary/95" />
+        <Container className="relative pt-[100px]">
           <div className=" grid  lg:gap-12  grid-cols-1 lg:grid-cols-3 content-center p-4 md:p-16">
             {/*====================== contact information====================== */}
-            <div className=" flex flex-col items-center lg:flex-none text-white border-b-2 border-b-[#818181] lg:border-b-0  lg:border-r-2  lg:border-r-[#818181] pb-10  ">
-              <h2 className=" text-4xl text-center md:text-start md:text-4xl mb-7 flex items-center gap-4">
-                <Image className="w-12" src={logo} alt="Educmate " /> EduMate
-              </h2>
-              <p className="text-[#818181] text-center md:text-justify mb-7 w-full  md:w-2/3">
+            <div className=" flex flex-col items-center lg:flex-none text-white border-b-2 border-b-[#818181] lg:border-b-0  lg:border-r-2  lg:border-r-[#818181]  ">
+              {/* logo */}
+              <div className="flex items-center gap-2 ">
+                <Image
+                  width={80}
+                  height={80}
+                  className=""
+                  src={logoIcon}
+                  alt="logo icon"
+                />
+                <Image
+                  width={200}
+                  height={50}
+                  className=""
+                  src={logoName}
+                  alt="Logo name"
+                />
+              </div>
+              <p className="text-gray-200 text-center md:text-justify mt-2 mb-7 w-full  md:w-2/3">
                 We do not belive in quantity rather belive in quality . Lets do
                 new thing dicouver new carear with us
               </p>
-
+              {/* Address */}
               <div className=" flex  pl-4 justify-center md:justify-start ">
-                <div className="space-y-4 text-[#818181]">
+                <div className="space-y-4 text-gray-200">
                   <p className="flex gap-5 items-center">
                     {" "}
                     <IoLocationOutline className="text-[#eca14d] text-xl" />{" "}
@@ -60,18 +122,46 @@ const Footer = () => {
                 </div>
               </div>
 
-              <div className="flex  gap-12 mt-12 pl-4 justify-center md:justify-start ">
-                <CiFacebook className="text-white text-xl" />
-                <FaXTwitter className="text-white text-xl" />
-                <FaLinkedin className="text-white text-xl" />
+              {/* Socil icons */}
+              <div className="text-gray-300  flex  items-center gap-3 mt-5">
+                <Link href="#">
+                  <FaFacebookF
+                    size={30}
+                    className="hover:text-secondary hover:scale-110 duration-500"
+                  />
+                </Link>
+                <Link href="#">
+                  <FaLinkedinIn
+                    size={30}
+                    className="hover:text-secondary hover:scale-110 duration-500"
+                  />
+                </Link>
+                <Link href="#">
+                  <FaTwitter
+                    size={30}
+                    className="hover:text-secondary hover:scale-110 duration-500"
+                  />
+                </Link>
+                <Link href="#">
+                  <FaSquareInstagram
+                    size={30}
+                    className="hover:text-secondary hover:scale-110 duration-500"
+                  />
+                </Link>
+                <Link href="#">
+                  <FaYoutube
+                    size={30}
+                    className="hover:text-secondary hover:scale-110 duration-500"
+                  />
+                </Link>
               </div>
             </div>
 
-            <div className="grid grid-cols-2  mx-5 gap-12 content-center place-items-center  border-b-2  border-b-[#818181] lg:border-b-0     lg:border-r-2 md:place-content-start   lg:border-r-[#818181] pb-10 ">
               {/* ================menue content============= */}
+            <div className="grid grid-cols-2  mx-5 gap-12 content-center place-items-center  border-b-2  border-b-[#818181] lg:border-b-0     lg:border-r-2 md:place-content-start   lg:border-r-[#818181]  ">
               <div className="">
-                <h2 className="text-xl mb-4  text-white mt-4">Menu</h2>
-                <ul className="space-y-5 text-[#818181]">
+                <h2 className="text-xl mb-4  text-primary font-medium mt-4">Menu</h2>
+                <ul className="space-y-5 text-gray-300">
                   <li>
                     {" "}
                     <Link href={""}>Home</Link>{" "}
@@ -96,8 +186,8 @@ const Footer = () => {
               </div>
               {/* ==============service content===================== */}
               <div>
-                <h2 className="text-xl mb-4  text-white mt-4">Services</h2>
-                <ul className="space-y-5 text-[#818181] ">
+                <h2 className="text-xl mb-4  text-primary font-medium mt-4">Services</h2>
+                <ul className="space-y-5 text-gray-200 ">
                   <li>
                     {" "}
                     <Link href={""}>Customer </Link>{" "}
@@ -138,8 +228,7 @@ const Footer = () => {
                     <div>
                       <label
                         htmlFor=" "
-                        className="flex items-center relative "
-                      >
+                        className="flex items-center relative ">
                         <input
                           type="text"
                           placeholder="Emaill address"
