@@ -11,7 +11,7 @@ import waveSahapeUp from "@/Assets/BannerImage/waveUp.svg";
 import Status from "./Status";
 const Banner = () => {
   return (
-    <section className="relative bg-gradient-to-r from-primary/60 via-secondary/20 to-primary/60  min-h-screen lg:min-h-0 lg:h-[calc(100vh)] flex justify-center items-center">
+    <section className="relative bg-gradient-to-r from-primary/60 via-secondary/20 to-primary/60 min-h-screen lg:min-h-0 lg:h-[calc(100vh)] flex justify-center items-center">
       <Container className="h-full flex justify-center items-center">
         <div className=" w-full flex flex-col justify-between items-center gap-y-10  text-[rgb(254,250,224)] md:flex-row my-10 xl:my-0 ">
           {/*Left*/}

@@ -1,15 +1,15 @@
-import Section from "@/Components/Utils/Section";
 import Image from "next/image";
 import { FaRegUserCircle, FaSearch } from "react-icons/fa";
 import ShareButton from "@/Components/WebLayoutComponents/Home/Blog/ShareButton";
 import Container from "@/Components/Utils/Container";
-import { GoDotFill } from "react-icons/go";
 import Link from "next/link";
 import { FaAngleLeft, FaAngleRight, FaRegCommentDots } from "react-icons/fa6";
 import RouteBanner from "@/Components/WebLayoutComponents/Shared/RouteBanner/RouteBanner";
 import { promises as fs } from 'fs'
 import { BiLike } from "react-icons/bi";
 import DetailsButton from "@/Components/WebLayoutComponents/Shared/Cards/DetailsButton";
+import Section from "@/Components/Utils/Section";
+import { GoDotFill } from "react-icons/go";
 
 const BlogPage = async () => {
   const file = await fs.readFile(process.cwd() + '/public/blogData.json', 'utf8');
@@ -160,4 +160,4 @@ const BlogPage = async () => {
   )
 };
 
-export default BlogPage;
+export default BlogDetails;

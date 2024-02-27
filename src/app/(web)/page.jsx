@@ -5,17 +5,18 @@ import FAQ from "@/Components/WebLayoutComponents/Home/FAQ/FAQ";
 import FreeCourses from "@/Components/WebLayoutComponents/Home/FreeCourses/FreeCourses";
 import PopularCourses from "@/Components/WebLayoutComponents/Home/PopularCourses/PopularCourses";
 import Review from "@/Components/WebLayoutComponents/Home/Review/Review";
-
+import UpComingCourses from "@/Components/WebLayoutComponents/Home/UpComingCourses/UpComingCourses";
 
 const Homepage = () => {
   return (
     <div>
       <Banner></Banner>
       <PopularCourses />
+      <UpComingCourses />
       <FreeCourses />
-      <FAQ />
-      <Blog />
       <Review />
+      <Blog />
+      <FAQ />
     </div>
   );
 };
