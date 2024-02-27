@@ -47,7 +47,8 @@ const Footer = () => {
           preserveAspectRatio="none"
           overflow="auto"
           shapeRendering="auto"
-          fill="#250d87">
+          fill="#250d87"
+        >
           <defs>
             <path
               id="wavepath"
@@ -157,10 +158,12 @@ const Footer = () => {
               </div>
             </div>
 
-              {/* ================menue content============= */}
+            {/* ================menue content============= */}
             <div className="grid grid-cols-2  mx-5 gap-12 content-center place-items-center  border-b-2  border-b-[#818181] lg:border-b-0     lg:border-r-2 md:place-content-start   lg:border-r-[#818181]  ">
               <div className="">
-                <h2 className="text-xl mb-4  text-primary font-medium mt-4">Menu</h2>
+                <h2 className="text-xl mb-4  text-primary font-medium mt-4">
+                  Menu
+                </h2>
                 <ul className="space-y-5 text-gray-300">
                   <li>
                     {" "}
@@ -186,7 +189,9 @@ const Footer = () => {
               </div>
               {/* ==============service content===================== */}
               <div>
-                <h2 className="text-xl mb-4  text-primary font-medium mt-4">Services</h2>
+                <h2 className="text-xl mb-4  text-primary font-medium mt-4">
+                  Services
+                </h2>
                 <ul className="space-y-5 text-gray-200 ">
                   <li>
                     {" "}
@@ -218,7 +223,9 @@ const Footer = () => {
               </h2> */}
 
               <div>
-                <h2 className="text-xl mb-4  text-white mt-4">News Latter</h2>
+                <h2 className="text-xl mb-4  text-white mt-4 font-bold">
+                  News Latter
+                </h2>
                 <div className="lg:content-normal text-white space-y-3">
                   <h2 className="text-start text-xl">Never miss an offer</h2>
                   <p className="text-sm">
@@ -228,7 +235,8 @@ const Footer = () => {
                     <div>
                       <label
                         htmlFor=" "
-                        className="flex items-center relative ">
+                        className="flex items-center relative "
+                      >
                         <input
                           type="text"
                           placeholder="Emaill address"

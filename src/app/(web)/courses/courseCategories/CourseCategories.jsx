@@ -20,7 +20,7 @@ const CourseCategories = ({
           <div className="">
             <h2 className="text-xl md:text-2xl relative font-medium mb-6">
               Categories
-              <span className="inline-block w-3/12 h-[3px] bg-[#ffb606] absolute -bottom-2 left-0"></span>
+              <span className="inline-block w-3/12 h-[3px] bg-[#250D87] absolute -bottom-2 left-0"></span>
             </h2>
 
             <div className="space-y-3">
@@ -118,7 +118,7 @@ const CourseCategories = ({
           <div className="">
             <h2 className="text-xl md:text-2xl relative font-medium mb-6">
               Author
-              <span className="inline-block w-3/12 h-[3px] bg-[#ffb606] absolute -bottom-2 left-0"></span>
+              <span className="inline-block w-3/12 h-[3px] bg-[#250D87] absolute -bottom-2 left-0"></span>
             </h2>
 
             <div className="space-y-3">
@@ -149,7 +149,7 @@ const CourseCategories = ({
           <div className="">
             <h2 className="text-xl md:text-2xl relative font-medium mb-4">
               Price
-              <span className="inline-block w-3/12 h-[3px] bg-[#ffb606] absolute -bottom-2 left-0"></span>
+              <span className="inline-block w-3/12 h-[3px] bg-[#250D87] absolute -bottom-2 left-0"></span>
             </h2>
 
             <div className="space-y-3">
@@ -172,12 +172,12 @@ const CourseCategories = ({
           </div>
 
           <div className="flex gap-4">
-            <button className="bg-[#ffb606] px-5 py-2 lg:px-8 lg:py-3  rounded-[5px] text-black font-medium  ">
+            <button className="bg-[#250D87] px-5 py-2 lg:px-8 lg:py-3  rounded-[5px] text-white font-medium  ">
               FILTER{" "}
             </button>
             <button
               onClick={() => resetCheckedBox()}
-              className="bg-[#ffb606] px-5  py-2 lg:py-3  rounded-[5px] text-black font-medium  "
+              className="bg-[#250D87] px-5  py-2 lg:py-3  rounded-[5px] text-white font-medium  "
             >
               RESET{" "}
             </button>
