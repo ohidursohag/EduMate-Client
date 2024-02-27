@@ -15,7 +15,7 @@ const Review = async () => {
   return (
     <Section>
       <SectionTitle sectionName={'Reviews'} title={'What Our Students Says'}/>
-      <Marquee  gradient direction="right">
+      <Marquee  gradient direction="right" >
           {reviews.map((data) => (
             <div key={data.name}>
               <ReviewCard
@@ -27,7 +27,7 @@ const Review = async () => {
             </div>
           ))}
         </Marquee>
-      <Marquee  gradient direction="left">
+      <Marquee  gradient direction="left" >
           {reviews.map((data) => (
             <div key={data.name}>
               <ReviewCard

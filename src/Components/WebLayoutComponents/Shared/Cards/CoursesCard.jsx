@@ -45,25 +45,27 @@ const CoursesCard = ({ course }) => {
             {toSentenseCase(status)}
           </div>
         )}
-        {discount && <div className="absolute right-5 bottom-5">
-         <div className="relative">
-         <Image src={discountBg} width={55} height={55} alt="discont bg"/>
-          <p className="absolute text-white top-4 left-2  ">-{discount}%</p>
+        {discount && (
+          <div className="absolute right-5 bottom-5">
+            <div className="relative">
+              <Image src={discountBg} width={55} height={55} alt="discont bg" />
+              <p className="absolute text-white top-4 left-2  ">-{discount}%</p>
+            </div>
           </div>
-         </div>}
+        )}
       </div>
 
       <div className="flex-1 flex flex-col justify-between h-full">
         <div className="flex items-center justify-between mb-1">
-          <p className="py-1 px-3 bg-secondary max-w-max rounded-3xl text-xs text-white ">
+          <p className="py-1 px-3 bg-secondary/30 font-medium max-w-max rounded-3xl text-xs text-primary ">
             {category}
           </p>
+          <button className="p-[6px] hover:bg-secondary hover:text-white text-primary rounded-full">
+            <FaRegHeart size={25} />
+          </button>
         </div>
         <div className="flex justify-between items-center">
           <CourseRating rating={rating} total_reviews={total_reviews} />
-          <button className="p-[6px] hover:bg-secondary hover:text-white text-primary rounded-full">
-            <FaRegHeart size={18} />
-          </button>
         </div>
         <h2 className="text-xl font-bold mb-2">{title}</h2>
         <div className="flex justify-start items-center gap-10 pb-2">

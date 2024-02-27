@@ -14,9 +14,9 @@ const Homepage = () => {
       <PopularCourses/>
       <UpComingCourses/>
       <FreeCourses />
-      <FAQ />
       <Review />
       <Blog />
+      <FAQ />
     </div>
   );
 };

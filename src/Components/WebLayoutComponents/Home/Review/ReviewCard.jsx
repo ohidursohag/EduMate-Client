@@ -8,7 +8,7 @@ import { BiSolidQuoteRight } from "react-icons/bi";
 const ReviewCard = ({ name, image, designation, description, ratings }) => {
 
   return (
-    <div className=" flex max-w-[400px]  mx-auto justify-center items-center px-7 py-10 shadow-md rounded-md mr-10 my-3">
+    <div className=" flex max-w-[350px] md:max-w-[400px] mx-auto justify-center items-center px-7 py-10 shadow-md rounded-md mr-10 my-3">
       <div className="relative flex flex-col gap-5">
         <div className="absolute right-0 -top-2 text-secondary/40">
           <BiSolidQuoteRight  size={80}/>
